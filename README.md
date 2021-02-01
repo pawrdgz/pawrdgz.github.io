@@ -5,7 +5,7 @@
 **About**
 
 This portfolio is an exercise for the MFA in Digital Experiences Design. 
-Also, it will serve as a personal portfolio with some projects that I've been working on.
+It will also serve as a personal portfolio with some projects that I've been working on.
 
 **Parts**
 
