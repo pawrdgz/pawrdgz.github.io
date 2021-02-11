@@ -238,12 +238,7 @@ a:active {
 }
 
 .menu {
-    position: absolute;
-    padding-left: 1420px;
-    padding-top: 117px;
-    height: 114px;
-    width: 180px;
-
+    display: none;
 }
 
 /*-------------HEADER----------------*/
@@ -274,10 +269,7 @@ a:active {
     padding-top: 50px;
 }
 
-.billboard__content {
-    padding-left: 447px;
-    padding-top: 117px;
-}
+
 
 
 /*-------------ABOUT----------------*/
@@ -298,5 +290,18 @@ a:active {
 
 
 /* ----------------------- RESPONSIVE 960px ------------------ */
+@media (min-width: 60em) {
 
+.menu {
+    display: inline;
+    position: absolute;
+    padding-left: 1420px;
+    padding-top: 117px;
+    height: 114px;
+    width: 180px;
+
+}
+
+
+}
   /* ----------------------- END RESPONSIVE 960px ------------------ */
