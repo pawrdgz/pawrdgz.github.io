@@ -302,12 +302,12 @@ p {
 .img__coin {
     display: inline;
     margin: 8rem 0;
-    max-height: auto;
+    max-height: 28%;
     max-width: 28%;
     }
 
 .img__about {
-    max-height: auto;
+    max-height: 65%;
     margin: 3.2rem;
     max-width: 65%;
 }
