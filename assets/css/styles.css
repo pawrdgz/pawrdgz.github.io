@@ -300,7 +300,6 @@ p {
 /*-------------IMAGES----------------*/
 
 .img__coin {
-    display: inline;
     height: auto;
     margin: 8rem 0;
     max-width: 28%;
