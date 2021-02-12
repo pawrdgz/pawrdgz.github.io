@@ -301,13 +301,13 @@ p {
 
 .img__coin {
     display: inline;
+    height: auto;
     margin: 8rem 0;
-    max-height: 28%;
     max-width: 28%;
     }
 
 .img__about {
-    max-height: 65%;
+    height: auto;
     margin: 3.2rem;
     max-width: 65%;
 }
