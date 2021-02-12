@@ -300,6 +300,7 @@ p {
 /*-------------IMAGES----------------*/
 
 .img__coin {
+    display: inline;
     height: auto;
     margin: 8rem 0;
     max-width: 28%;
@@ -328,6 +329,13 @@ p {
 
 /*-------------CONTACT------------------*/
 
+
+
+.p__contact {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem 4rem 0 4.4rem;
+}
 
 /*-------------FOOTER-------------------*/
 
