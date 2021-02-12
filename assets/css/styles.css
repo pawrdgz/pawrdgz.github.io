@@ -153,19 +153,20 @@ h3,
 }
 
 h1 {
-    
-    font-size: 7.5rem; /*Tamaño de fuente: 75px */
-    font-weight: bold;
+    font-size: 6.3rem; /*Tamaño de fuente: 63px */
+    font-weight: 600;
     line-height: 1.09;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #303030;
 }
 
 h2 {
-    color: #C8A968;
-    font-size: 6.5rem; /*Tamaño de fuente: 65px */
-    font-weight: 100;
+    color: transparent;
+    font-size: 4.6rem; /*Tamaño de fuente: 46px */
+    font-weight: 900;
     line-height: 0.96;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #303030;
+    margin: 3.2rem  0;
+    
 }
 
 /* links colores de selección */
@@ -187,6 +188,12 @@ a:active {
     margin: 1.5rem 0 0;
   }
 
+p {
+    color: #303030;
+    font-size: 1.3rem; /*Tamaño de fuente: 13px */
+    font-weight: 700;
+    line-height: 19.56px;
+}
 
 /*-------------UTILITES-------------*/
 
@@ -226,6 +233,11 @@ a:active {
     border-color: #5d2775;
 }
 
+.coins {
+    display: flex;
+    justify-content: center;
+}
+
 .hollow {
     background: none;
     color: #a956d0;
@@ -249,6 +261,7 @@ a:active {
 
 .header_location_text {
     font-size: 1.9rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -269,13 +282,48 @@ a:active {
     padding-top: 50px;
 }
 
+.billboard_title {
+    margin-top: 5.6rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #303030;
+}
+
+.billboard_title_invert {
+    color: #C8A968;
+    font-size: 6.5rem; /*Tamaño de fuente: 65px */
+    font-weight: 100;
+    line-height: 0.96;
+    stroke: none;
+}
 
 
+/*-------------IMAGES----------------*/
+
+.img__coin {
+    display: inline;
+    margin: 8rem 0;
+    max-width: 28%;
+    }
+
+.img__about {
+    margin: 3.2rem;
+    max-width: 65%;
+}
 
 /*-------------ABOUT----------------*/
 
+.about__column__fact {
+    margin: 4rem 8rem 0 4.4rem;
+}
 
+.about__column__img {
+    display: flex;
+    justify-content: center;
+}
 
+.about__column__main {
+    margin: 2rem 4rem 0 4.4rem;
+}
 
 /*-------------CONTACT------------------*/
 
