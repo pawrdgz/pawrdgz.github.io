@@ -21,6 +21,7 @@
         <link href="assets/css/styles.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="assets\js\splide-2.4.21\dist\css/splide.min.css">
+        <link rel="stylesheet" href="assets\js\splide-2.4.21\dist\css/themes/splide-sea-green.min.css">
 
     </head>
 
@@ -93,16 +94,16 @@
                 </h2>
             </div>
             <div class="wrapper">
-                    <div class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">Slide 01</li>
-                                <li class="splide__slide">Slide 02</li>
-                                <li class="splide__slide">Slide 03</li>
-                            </ul>
-                        </div>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="https://picsum.photos/275/210" alt=""></li>
+                            <li class="splide__slide"><img src="https://picsum.photos/275/210" alt=""></li>
+                            <li class="splide__slide"><img src="https://picsum.photos/275/210" alt=""></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
         </section>
 
 <!--vas a tener que ir eliminando esto!!!-->
@@ -175,6 +176,9 @@
 <!-- slider de projects--> 
     <script src="assets\js\splide-2.4.21\dist\js/splide.min.js"></script>
 
+    <script>
+        new Splide( '.splide' ).mount();
+    </script>
 
 </body>
 
