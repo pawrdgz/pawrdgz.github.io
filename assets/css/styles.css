@@ -176,7 +176,7 @@ a {
 }
 
 a:hover{
-    color: peru;
+    background-color: peru;
 } 
 
 
@@ -308,7 +308,6 @@ p {
 
 .img__about {
     height: auto;
-  
     max-width: 65%;
 }
 
@@ -324,13 +323,21 @@ p {
 
 /*-------------CONTACT------------------*/
 
-
+.contact__text {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 2rem 4rem 0 4.4rem;
+    word-wrap: normal;
+}
 
 .p__contact {
     font-size: 3rem;
-    font-weight: 600;
-    margin: 2rem 4rem 0 4.4rem;
+    font-weight: 500;
+    padding-top: 4rem;
 }
+
+
 
 /*-------------FOOTER-------------------*/
 
