@@ -317,6 +317,11 @@ p {
     margin: 4rem 8rem 0 4.4rem;
 }
 
+.about__column__img {
+    display: flex;
+    justify-content: center;
+}
+
 .about__column__main {
     margin: 2rem 4rem 0 4.4rem;
 }
