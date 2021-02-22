@@ -307,8 +307,6 @@ p {
     }
 
 .img__about {
-    display:block;
-    margin:auto;
     height: auto;
     max-width: 65%;
 }
@@ -317,6 +315,11 @@ p {
 
 .about__column__fact {
     margin: 4rem 8rem 0 4.4rem;
+}
+
+.about__column__img {
+    display: flex;
+    justify-content: center;
 }
 
 .about__column__main {
