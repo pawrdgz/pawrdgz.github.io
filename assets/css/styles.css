@@ -316,6 +316,7 @@ p {
     display: flex;
     justify-content: center;
     height: auto;
+    transform: translateX(50%);
 }
 
 /*-------------ABOUT----------------*/
