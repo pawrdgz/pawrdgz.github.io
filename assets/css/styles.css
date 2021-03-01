@@ -199,12 +199,6 @@ p {
 
 /* utilizo el wrapper para aplicar la misma clase a distintas cosas */
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 128rem;
-    padding: 0 1rem;
-}
-
 .arrow_top {
     height: 35px;
     transform: rotate(90deg);
@@ -233,6 +227,11 @@ p {
     border-color: #5d2775;
 }
 
+.column {
+    margin: 2rem 4rem 0 4.4rem;
+}
+
+
 .coins {
     display: flex;
     justify-content: center;
@@ -251,6 +250,13 @@ p {
 
 .menu {
     display: none;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 1rem;
 }
 
 /*-------------HEADER----------------*/
@@ -307,24 +313,15 @@ p {
     }
 
 .img__about {
+    display: flex;
+    justify-content: center;
     height: auto;
-    max-width: 65%;
 }
 
 /*-------------ABOUT----------------*/
 
-.about__column__fact {
-    margin: 4rem 8rem 0 4.4rem;
-}
 
-.about__column__img {
-    display: flex;
-    justify-content: center;
-}
 
-.about__column__main {
-    margin: 2rem 4rem 0 4.4rem;
-}
 
 /*-------------CONTACT------------------*/
 
@@ -356,15 +353,35 @@ p {
 /* ----------------------- RESPONSIVE 960px ------------------ */
 @media (min-width: 60em) {
 
-.menu {
-    display: inline;
-    position: absolute;
-    padding-left: 1420px;
-    padding-top: 117px;
-    height: 114px;
-    width: 180px;
+    .menu {
+        display: inline;
+        position: absolute;
+        padding-left: 1420px;
+        padding-top: 117px;
+        height: 114px;
+        width: 180px;
 
-}
+    }
+
+
+/*------------------UTILITES----------*/
+
+    .column {
+        padding: ;
+        width: 33%;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+/*------------------ABOUT--------------*/
+
+    .about__column__fact, .about__column__img, .about__column__main {
+        width: 33%;
+    }
 
 
 }
