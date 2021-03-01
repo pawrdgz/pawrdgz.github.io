@@ -306,8 +306,6 @@ p {
 /*-------------IMAGES----------------*/
 
 .img__about {
-    display: flex;
-    justify-content: center;
     height: auto;
     transform: translateX(50%);
 }
@@ -317,7 +315,7 @@ p {
     height: auto;
     margin: 8rem 0;
     max-width: 28%;
-    }
+}
 
 .img__corazon {
     max-width: 20%;
