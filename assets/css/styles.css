@@ -228,7 +228,7 @@ p {
 }
 
 .column {
-    margin: 2rem 4rem 0 4.4rem;
+    margin: 4rem 4rem 0 4.4rem;
 }
 
 
@@ -305,13 +305,6 @@ p {
 
 /*-------------IMAGES----------------*/
 
-.img__coin {
-    display: inline;
-    height: auto;
-    margin: 8rem 0;
-    max-width: 28%;
-    }
-
 .img__about {
     display: flex;
     justify-content: center;
@@ -319,9 +312,22 @@ p {
     transform: translateX(50%);
 }
 
+.img__coin {
+    display: inline;
+    height: auto;
+    margin: 8rem 0;
+    max-width: 28%;
+    }
+
+.img__corazon {
+    max-width: 20%;
+    margin-left: -2rem;
+    opacity: 50%;
+    position: relative;
+    transform: translateY(-150%);
+    z-index: -99;
+}
 /*-------------ABOUT----------------*/
-
-
 
 
 /*-------------CONTACT------------------*/
