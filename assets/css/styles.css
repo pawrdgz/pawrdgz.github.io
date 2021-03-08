@@ -307,7 +307,7 @@ p {
 
 .img__about {
     height: auto;
-    transform: translateX(50%);
+
 }
 
 .img__coin {
@@ -324,6 +324,14 @@ p {
     position: relative;
     transform: translateY(-150%);
     z-index: -99;
+}
+
+
+.img__slider {
+    max-width: 15rem;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%);
 }
 /*-------------ABOUT----------------*/
 
