@@ -326,6 +326,12 @@ p {
     z-index: -99;
 }
 
+.img__mario {
+    display: inline;
+    height: auto;
+    max-width: 20%;
+    
+}
 
 .img__slider {
     max-width: 15rem;
