@@ -193,6 +193,7 @@ p {
     font-size: 1.3rem; /*Tamaño de fuente: 13px */
     font-weight: 700;
     line-height: 19.56px;
+    z-index: 10;
 }
 
 /*-------------UTILITES-------------*/
@@ -323,14 +324,15 @@ p {
     opacity: 50%;
     position: relative;
     transform: translateY(-150%);
-    z-index: -99;
+    z-index: 0;
 }
 
 .img__mario {
     display: inline;
-    height: auto;
+    float: left;
+    height: 100px;
+    margin: 0rem .5rem;
     max-width: 20%;
-    
 }
 
 .img__slider {
@@ -341,6 +343,9 @@ p {
 }
 /*-------------ABOUT----------------*/
 
+.ul__corazon {
+
+}
 
 /*-------------CONTACT------------------*/
 
@@ -359,6 +364,13 @@ p {
 }
 
 
+/*-------------MARIO SEQUENCE-------------------*/
+
+.mario__sequence {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0rem;
+}
 
 /*-------------FOOTER-------------------*/
 
