@@ -319,19 +319,23 @@ p {
 }
 
 .img__corazon {
+    display: flex;
     max-width: 20%;
     margin-left: -2rem;
     opacity: 50%;
-    position: relative;
     transform: translateY(-150%);
     z-index: 0;
+}
+
+.img__corazon_space {
+    margin-right: 0.5rem;
 }
 
 .img__mario {
     display: inline;
     float: left;
     height: 100px;
-    margin: 0rem .5rem;
+    margin: 0rem 1rem;
     max-width: 20%;
 }
 
@@ -343,9 +347,7 @@ p {
 }
 /*-------------ABOUT----------------*/
 
-.ul__corazon {
 
-}
 
 /*-------------CONTACT------------------*/
 
