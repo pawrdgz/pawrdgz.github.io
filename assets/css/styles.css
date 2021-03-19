@@ -131,7 +131,7 @@ button::-moz-focus-inner {
     }
 }
 
-/* ------------------GLOBAL--------------*/
+/*------------------GLOBAL------------------*/
 
 html {
     font-size: 62.5%; /* Tipografía base: 10px */
@@ -196,7 +196,7 @@ p {
     z-index: 10;
 }
 
-/*-------------UTILITES-------------*/
+/*------------------UTILITES------------------*/
 
 /* utilizo el wrapper para aplicar la misma clase a distintas cosas */
 
@@ -260,7 +260,7 @@ p {
     padding: 0 1rem;
 }
 
-/*-------------HEADER----------------*/
+/*------------------HEADER------------------*/
 
 .header__location{
     padding-top: 50px;
@@ -272,7 +272,7 @@ p {
     text-transform: uppercase;
 }
 
-/*-------------NAVIGATION----------------*/
+/*------------------NAVIGATION------------------*/
 
 
 .nav-link {
@@ -282,7 +282,7 @@ p {
 
 
 
-/*-------------BILLBOARD----------------*/
+/*------------------BILLBOARD------------------*/
 
 .arrow_top {
     padding-left: 74px;
@@ -304,7 +304,7 @@ p {
 }
 
 
-/*-------------IMAGES----------------*/
+/*------------------IMAGES------------------*/
 
 .img__about {
     height: auto;
@@ -345,11 +345,11 @@ p {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(90%);
 }
-/*-------------ABOUT----------------*/
+/*------------------ABOUT------------------*/
 
 
 
-/*-------------CONTACT------------------*/
+/*------------------CONTACT------------------*/
 
 .contact__text {
     font-size: 2.4rem;
@@ -366,7 +366,7 @@ p {
 }
 
 
-/*-------------MARIO SEQUENCE-------------------*/
+/*------------------MARIO SEQUENCE------------------*/
 
 .mario__sequence {
     display: flex;
@@ -374,7 +374,7 @@ p {
     margin: 10rem 0rem;
 }
 
-/*-------------FOOTER-------------------*/
+/*------------------FOOTER-------------------*/
 
 
 
@@ -383,7 +383,7 @@ p {
 
 
 
-/* ----------------------- RESPONSIVE 960px ------------------ */
+/*------------------RESPONSIVE 960px------------------*/
 @media (min-width: 60em) {
 
     .menu {
@@ -396,8 +396,19 @@ p {
 
     }
 
+/*------------------GLOBAL------------------*/
 
-/*------------------UTILITES----------*/
+h1 {
+    font-size: 14rem; /*Tamaño de fuente: 140px */
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 1rem;
+}
+
+/*------------------UTILITES------------------*/
 
     .column {
         padding: ;
@@ -410,7 +421,50 @@ p {
         width: 100%;
     }
 
-/*------------------ABOUT--------------*/
+
+/*------------------HEADER------------------*/  
+
+.header_location_text {
+    position: absolute;
+    top: 2.7rem;
+    right: 4rem;
+}
+
+ 
+/*------------------NAVIGATION------------------*/   
+
+/*------------------BILLBOARD------------------*/   
+
+.billboard_title {
+    position: absolute;
+    left: 3.7rem;
+    top: 2.7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #303030;
+}
+
+.billboard_title_invert {
+    color: #C8A968;
+    font-size: 12rem; /*Tamaño de fuente: 120px */
+    font-weight: 100;
+    left: 73.8rem;
+    line-height: 0.96;
+    position: flex;
+    stroke: none;
+    top: 43.6rem;
+}
+
+
+/*------------------IMAGES------------------*/ 
+
+.img__coin {
+    display: inline;
+    height: auto;
+    margin: 8rem 0;
+    max-width: 10%;
+}
+
+/*------------------ABOUT------------------*/
 
     .about__column__fact, .about__column__img, .about__column__main {
         width: 33%;
@@ -418,4 +472,4 @@ p {
 
 
 }
-  /* ----------------------- END RESPONSIVE 960px ------------------ */
+  /*------------------END RESPONSIVE 960px------------------*/
