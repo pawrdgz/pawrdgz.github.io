@@ -200,10 +200,8 @@ p {
 
 /* utilizo el wrapper para aplicar la misma clase a distintas cosas */
 
-.arrow_top {
-    height: 35px;
-    transform: rotate(90deg);
-    width: 50px;
+.arrow__top {
+    display: none;
 }
 
 .button {
@@ -377,7 +375,14 @@ p {
 /*------------------FOOTER-------------------*/
 
 
+footer {
 
+    background: #F7F2E8 !important;
+    color: #303030 !important;
+    margin-top: 10rem;
+    padding: 2em 0;
+    text-align: center;
+}
 
 
 
@@ -399,7 +404,7 @@ p {
 /*------------------GLOBAL------------------*/
 
 h1 {
-    font-size: 14rem; /*Tamaño de fuente: 140px */
+    font-size: 18rem; /*Tamaño de fuente: 140px */
 }
 
 .wrapper {
@@ -410,8 +415,11 @@ h1 {
 
 /*------------------UTILITES------------------*/
 
+    .arrow__top {
+        display: inline;
+    }
+
     .column {
-        padding: ;
         width: 33%;
     }
 
@@ -425,6 +433,8 @@ h1 {
 /*------------------HEADER------------------*/  
 
 .header_location_text {
+    font-size: 2.5rem;
+    line-height: 1;
     position: absolute;
     top: 2.7rem;
     right: 4rem;
@@ -435,24 +445,31 @@ h1 {
 
 /*------------------BILLBOARD------------------*/   
 
+.billboard {
+    height: 100vh;
+}
+
 .billboard_title {
     position: absolute;
-    left: 3.7rem;
-    top: 2.7rem;
+    left: 4rem;
+    top: -5.5rem;
+
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #303030;
 }
 
 .billboard_title_invert {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
     color: #C8A968;
-    font-size: 12rem; /*Tamaño de fuente: 120px */
+    font-size: 16rem; /*Tamaño de fuente: 120px */
     font-weight: 100;
-    left: 73.8rem;
     line-height: 0.96;
-    position: flex;
     stroke: none;
-    top: 43.6rem;
+
 }
+
 
 
 /*------------------IMAGES------------------*/ 
@@ -472,4 +489,15 @@ h1 {
 
 
 }
+
+/*------------------CONTACT------------------*/ 
+    .contact__text {
+        font-size: 6.4rem;
+        margin-top: 5.4rem;
+    }
+
+    .p__contact {
+        padding-top: 10rem;
+    }
+
   /*------------------END RESPONSIVE 960px------------------*/

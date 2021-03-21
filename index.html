@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="assets/js/splide-2.4.21/dist/css/splide.min.css">
         <link rel="stylesheet"
             href="assets/js/splide-2.4.21/dist/css/themes/splide-sea-green.min.css">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- CSS propio-->
         <link href="assets/css/styles.css" rel="stylesheet" />
@@ -37,30 +39,26 @@
                 </div>
             </div>
         </header>
+
         <main>
 <!-- Primera parte!-->
             <section class="billboard">
-                <div class="wrapper">
                     <div class="billboard__content">
-                        <div class="billboard__title">
                             <h1 class="billboard_title">Paula <br />Rodríguez</h1>
                             <h1 class="billboard_title_invert">Junior UX <br />Designer</h1>
-                        </div>
-                    </div>
+                            <div id="arrowtop" class="arrow__top">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(90deg); position: absolute;
+                                bottom: 4rem; left: 2.7rem;">
+                                    <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
+                                    0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
+                                    7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
+                            </div>
+                    <div >
+                        
                 </div>
+                
             </section>
 
-            <div class="wrapper">
-                <div class="arrow_top">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M508.875 248.458l-160-160c-4.167-4.167-10.917-4.167-15.083 0-4.167
-                4.167-4.167 10.917 0 15.083l141.792 141.792H10.667C4.771 245.333 0 250.104 0
-                256s4.771 10.667 10.667 10.667h464.917L333.792 408.458c-4.167 4.167-4.167 10.917
-                0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125l160-160c4.166-4.166
-                4.166-10.916-.001-15.083z" />
-                    </svg>
-                </div>
-            </div>
 
             <section class="menu">
                 <div class="wrapper">
@@ -97,7 +95,7 @@
 
 
 <!--Segunda parte, con los proyectos!-->
-            <section id="projects">
+            <section id="projects" data-aos="fade-up" data-aos-duration="1500">
                 <div class="wrapper">
                     <h2>
                         projects
@@ -121,8 +119,9 @@
 
 
 <!-- Tercera parte, con el About Me!-->
-            <section id="about" class="about">
-                <div class="wrapper">
+            <section id="about" class="about" data-aos="fade-up" data-aos-duration="1500">
+                <div class="wrapper" > 
+                    
                     <h2>
                         about me
                     </h2>
@@ -210,7 +209,7 @@
 
 
 <!-- Cuarta parte, con el Contact!-->
-            <section id="contact">
+            <section id="contact" data-aos="fade-up" data-aos-duration="1500">
                 <div class="wrapper">
                     <h2>
                         contact
@@ -219,18 +218,25 @@
                 <div class="wrapper">
                     <div class="contact__text">
                         <a href="mailto:paularodriguez.design@gmail.com">paularodriguez.design @gmail.com</a>
-                        <a href="https://www.linkedin.com/in/paula-rodriguez-692bb8143/">
+                        <a href="https://www.linkedin.com/in/paula-rodriguez-692bb8143/" target="_blank" rel="noopener noreferrer">
                         <p class="p__contact">
                             LINKEDIN
                         </p>
                         </a>
+                    </div>
+                    <div id="arrowbottom" class="arrow__top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(-90deg); position: absolute;
+                        bottom: 4rem; left: 2.7rem;">
+                            <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
+                            0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
+                            7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
             <div class="wrapper">
-
+                <p>Paula Rodríguez, Todos los derechos reservados ©2021</p>
             </div>
         </footer>
 
@@ -238,8 +244,29 @@
 
         <!-- slider de projects-->
         <script src="assets/js/splide-2.4.21/dist/js/splide.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
         <script>
+
+            var $arrow = $("#arrowbottom a");
+            $("#arrowbottom").on("click", function() {
+            $("body,html").animate({
+                scrollTop: 0
+            }, 1250)
+            })
+            
+            var $arrow = $("#arrowtop a");
+            $("#arrowtop").on("click", function() {
+            $("body,html").animate({
+                scrollTop: 1000
+            }, 1250)
+            })
+
+
+            AOS.init();
+
             new Splide('.splide', {
                 type: 'loop',
                 autoWidth: true,
