@@ -42,7 +42,7 @@
 
         <main>
 <!-- Primera parte!-->
-            <section class="billboard">
+            <section class="billboard" >
                     <div class="billboard__content">
                             <h1 class="billboard_title">Paula <br />Rodríguez</h1>
                             <h1 class="billboard_title_invert">Junior UX <br />Designer</h1>
@@ -129,8 +129,8 @@
                 <div class="wrapper">
                     <div class="row"> 
                         <div class="column">                          
-                            <p>
-                                Junior UX Designer with a background in Literature, Web Content
+                            <p class="p__about">
+                            <b>Junior UX Designer</b> with a background in Literature, Web Content
                                 Management and e-learning. I studied English and
                                 Spanish studies but later on moved onto Digital Content Management, with
                                 2+ years of work experience. I’m currently
@@ -138,7 +138,7 @@
                                 organise and keep a track on everything.
 
                             </p>
-                            <p>
+                            <p class="p__about">
                                 Passionate about videogames, my goal is to work as an UX Designer in the
                                 videogame industry someday.
                             </p>
@@ -198,11 +198,17 @@
 
 <!-- Mario sequence-->
             <section>
-                <div class="mario__sequence">
+                <div class="mario__sequence" >
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_0.png" alt="mario sequence">
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_1.png" alt="mario sequence">
                     <img class="img__mario" src="./assets/imgs/mario/mario_2.png" alt="mario sequence">
                     <img class="img__mario" src="./assets/imgs/mario/mario_3.png" alt="mario sequence">
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_4.png" alt="mario sequence">
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_5.png" alt="mario sequence">
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_6.png" alt="mario sequence">
                     <img class="img__mario" src="./assets/imgs/mario/mario_7.png" alt="mario sequence">
                     <img class="img__mario" src="./assets/imgs/mario/mario_8.png" alt="mario sequence">
+                    <img class="img__mario hidden" src="./assets/imgs/mario/mario_9.png" alt="mario sequence">
                     <img class="img__mario" src="./assets/imgs/mario/mario_10.png" alt="mario sequence">
                 </div>
             </section>
@@ -226,7 +232,7 @@
                     </div>
                     <div id="arrowbottom" class="arrow__top">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(-90deg); position: absolute;
-                        bottom: 4rem; left: 2.7rem;">
+                        bottom: 4rem; right: 2.7rem;">
                             <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
                             0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
                             7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
@@ -271,7 +277,7 @@
                 type: 'loop',
                 autoWidth: true,
                 gap: '3rem',
-                focus: 'center',
+                focus: 'center'
             }).mount();
         </script>
 
