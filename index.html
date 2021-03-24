@@ -252,34 +252,7 @@
         <script src="assets/js/splide-2.4.21/dist/js/splide.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-        <script>
-
-            var $arrow = $("#arrowbottom a");
-            $("#arrowbottom").on("click", function() {
-            $("body,html").animate({
-                scrollTop: 0
-            }, 1250)
-            })
-            
-            var $arrow = $("#arrowtop a");
-            $("#arrowtop").on("click", function() {
-            $("body,html").animate({
-                scrollTop: 1000
-            }, 1250)
-            })
-
-
-            AOS.init();
-
-            new Splide('.splide', {
-                type: 'loop',
-                autoWidth: true,
-                gap: '3rem',
-                focus: 'center'
-            }).mount();
-        </script>
+        <script src="assets/js/app.js"></script>
 
     </body>
 

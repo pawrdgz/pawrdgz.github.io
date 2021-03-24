@@ -421,7 +421,7 @@ footer {
 
     .wrapper {
         margin: 0 auto;
-        max-width: 128rem;
+        max-width: 150rem;
         padding: 0 1rem;
     }
 
@@ -513,7 +513,8 @@ footer {
 
 /*------------------CONTACT------------------*/ 
     .contact__text {
-        margin-top: 5.4rem;
+        margin: 2rem 5.4rem 4rem 0rem;
+
     }
 
     .p__contact {
