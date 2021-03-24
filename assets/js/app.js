@@ -11,8 +11,8 @@ $("body,html").animate({
 var $arrow = $("#arrowtop a");
 $("#arrowtop").on("click", function() {
 $("body,html").animate({
-    scrollTop: 1000
-}, 1250)
+    scrollTop: 1400
+}, 1300)
 })
 
 
@@ -26,6 +26,6 @@ AOS.init();
 new Splide('.splide', {
     type: 'loop',
     autoWidth: true,
-    gap: '3rem',
+    gap: '8.4rem',
     focus: 'center'
 }).mount();
