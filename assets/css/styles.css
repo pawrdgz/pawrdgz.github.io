@@ -349,6 +349,38 @@ p {
     filter: grayscale(90%);
 }
 
+/*------------------PROJECTS------------------*/ 
+
+.container:hover .overlay {
+    opacity: 0.7;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #303030;
+  }
+
+  .text {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+
 /*------------------ABOUT------------------*/
 
 
@@ -411,7 +443,7 @@ footer {
 /*------------------GLOBAL------------------*/
 
     h1 {
-        font-size: 18rem; /*Tamaño de fuente: 140px */
+        font-size: 16rem; /*Tamaño de fuente: 180px */
     }
 
     h2{
@@ -434,7 +466,7 @@ footer {
 
     .wrapper {
         margin: 0 auto;
-        max-width: 170rem;
+        max-width: 140rem;
         padding: 0 1rem;
     }
 
@@ -538,7 +570,8 @@ footer {
         filter: grayscale(90%);
     }
 
-    /*------------------ABOUT------------------*/
+
+/*------------------ABOUT------------------*/
 
     .about__column__fact, .about__column__img, .about__column__main {
             width: 33%;
@@ -563,10 +596,11 @@ footer {
 /*------------------FOOTER------------------*/
 
     footer {
-        margin-top: 40rem;
+        margin-top: 30rem;
     }
 
 
 
 }
   /*---------------------------------END RESPONSIVE 960px---------------------------------*/
+
