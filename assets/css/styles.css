@@ -310,8 +310,10 @@ p {
 /*------------------IMAGES------------------*/
 
 .img__about {
+    border-radius: 25px;
     height: auto;
-
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
 }
 
 .img__coin {
