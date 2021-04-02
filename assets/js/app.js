@@ -30,3 +30,28 @@ new Splide('.splide', {
     focus: 'center'
 }).mount();
 
+
+// Intento de menú sticky
+
+$(document).ready(function() {
+
+    // Dock the header to the top of the window when scrolled past the banner.
+    // This is the default behavior.
+
+    $('.menu').scrollToFixed( 
+        {
+            marginTop:500
+        }
+
+     );
+
+
+    // Dock the footer to the bottom of the page, but scroll up to reveal more
+    // content if the page is scrolled far enough.
+
+    $('.footer').scrollToFixed( {
+        bottom: 0,
+        limit: $('.footer').offset().top
+    });
+
+});
