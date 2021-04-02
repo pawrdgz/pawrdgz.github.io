@@ -29,3 +29,4 @@ new Splide('.splide', {
     gap: '8.4rem',
     focus: 'center'
 }).mount();
+

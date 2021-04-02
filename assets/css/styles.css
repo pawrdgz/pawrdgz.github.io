@@ -131,6 +131,16 @@ button::-moz-focus-inner {
     }
 }
 
+/*------------------VARIABLES------------------*/
+
+:root {
+    --primary-color: #303030;
+    --secondary-color: #C8A968;
+    --lineheight-normal: 1;
+
+}
+
+
 /*------------------GLOBAL------------------*/
 
 html {
@@ -139,7 +149,7 @@ html {
 
 body {
     background-color: #F7F2E8;
-    color: #303030;
+    color: var(--primary-color);
     font-family: "Noto Sans", Arial, Helvetica, sans-serif;
     font-size: 1.6rem; /*Tamaño de fuente 16px */
     line-height: 1.3;
@@ -155,23 +165,23 @@ h3,
 h1 {
     font-size: 6.3rem; /*Tamaño de fuente: 63px */
     font-weight: 600;
-    line-height: 1.09;
+    line-height: var(--lineheight-normal);
 }
 
 h2 {
     color: transparent;
     font-size: 4.6rem; /*Tamaño de fuente: 46px */
     font-weight: 900;
-    line-height: 0.96;
+    line-height: var(--lineheight-normal);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #303030;
+    -webkit-text-stroke-color: var(--primary-color);
     margin: 3.2rem  0;
     
 }
 
 /* links colores de selección */
 a {
-    color: #303030;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -181,7 +191,7 @@ a:hover{
 
 
 a:active {
-    color: #C8A968;
+    color: var(--secondary-color);
   }
 
   p + p {
@@ -189,10 +199,10 @@ a:active {
   }
 
 p {
-    color: #303030;
+    color: var(--primary-color);
     font-size: 1.3rem; /*Tamaño de fuente: 13px */
     font-weight: 700;
-    line-height: 19.56px;
+    line-height: 1.7;
     z-index: 10;
 }
 
@@ -202,28 +212,6 @@ p {
 
 .arrow__top {
     display: none;
-}
-
-.button {
-    background: #a956d0;
-    border: 1px solid #a956d0;
-    border-radius: 2px;
-    color: #fff;
-    display: inline-block;
-    font-size: 1.2rem;
-    letter-spacing: 0.03rem;
-    line-height: 1;
-    min-width: 18rem;
-    padding: 1.5rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 250ms cubic-bezier(0.17, 0.67, 0.65, -0.03);
-  }
-
-.button:hover {
-    background: #5d2775;
-    border-color: #5d2775;
 }
 
 .column {
@@ -240,22 +228,10 @@ p {
     display: none;
 }
 
-.hollow {
-    background: none;
-    color: #a956d0;
-}
-
-.hollow:hover {
-    background: #a956d0;
-    border-color: #a956d0;
-    color: #fff;
-}
-
 .menu {
     display: none;
     visibility: hidden;
 }
-
 
 .wrapper {
     margin: 0 auto;
@@ -295,14 +271,14 @@ p {
 .billboard_title {
     margin-top: 5.6rem;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #303030;
+    -webkit-text-stroke-color: var(--primary-color);
 }
 
 .billboard_title_invert {
-    color: #C8A968;
+    color: var(--secondary-color);
     font-size: 6.5rem; /*Tamaño de fuente: 65px */
     font-weight: 100;
-    line-height: 0.96;
+    line-height: var(--lineheight-normal);
     stroke: none;
 }
 
@@ -367,7 +343,7 @@ p {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #303030;
+    background-color: var(--primary-color);
   }
 
   .text {
@@ -402,7 +378,7 @@ p {
 .p__mail {
     font-size: 2.4rem;
     font-weight: 800;
-    line-height: 1;
+    line-height: var(--lineheight-normal);
     word-wrap: normal;
 }
 
@@ -420,7 +396,7 @@ p {
 
 footer {
     background: #F7F2E8 !important;
-    color: #303030 !important;
+    color: var(--primary-color) !important;
     margin-top: 10rem;
     padding: 2em 0;
     text-align: center;
@@ -459,7 +435,7 @@ footer {
     .p__about {
         font-size: 2rem;
         font-weight: 100;
-        line-height: 1.3;
+        line-height: 1.5;
     }
 
     .projects, .contact {
@@ -502,7 +478,7 @@ footer {
 
     .header_location_text {
         font-size: 2.5rem;
-        line-height: 1;
+        line-height: var(--lineheight-normal);
         position: absolute;
         right: 4rem;
         top: 2.7rem;
@@ -523,15 +499,15 @@ footer {
         top: -5.5rem;
 
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #303030;
+        -webkit-text-stroke-color: var(--primary-color);
     }
 
     .billboard_title_invert {
         bottom: 4rem;
-        color: #C8A968;
+        color: var(--secondary-color);
         font-size: 16rem; /*Tamaño de fuente: 120px */
         font-weight: 100;
-        line-height: 0.96;
+        line-height: var(--lineheight-normal);
         position: absolute;
         right: 4rem;
         stroke: none;
