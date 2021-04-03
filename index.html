@@ -25,34 +25,47 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- CSS propio-->
-        <link href="assets/css/styles.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet"/>
 
     </head>
 
     <body>
         <header id="header" class="header">
             <div class="wrapper">
-                <div class="header__location">
-                    <p class="header_location_text">
-                        Based in <br>Barcelona
-                    </p>
-                </div>
+                
+            
+            <button class="menu-open">
+                <svg viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg">
+                <path d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 
+                0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 
+                0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 
+                0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"/>
+                </svg>
+            </button>
+
             </div>
+
         </header>
 
         <main>
 <!-- Primera parte!-->
             <section class="billboard" >
                     <div class="billboard__content">
-                            <h1 class="billboard_title">Paula <br />Rodríguez</h1>
-                            <h1 class="billboard_title_invert">Junior UX <br />Designer</h1>
-                            <div id="arrowtop" class="arrow__top">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(90deg); position: absolute;
-                                bottom: 4rem; left: 2.7rem;">
-                                    <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
-                                    0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
-                                    7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
-                            </div>
+                        <div class="header__location">
+                            <p class="header_location_text">
+                                Based in <br>Barcelona
+                            </p>
+                        </div>
+
+                        <h1 class="billboard_title">Paula <br />Rodríguez</h1>
+                        <h1 class="billboard_title_invert">Junior UX <br />Designer</h1>
+                        <div id="arrowtop" class="arrow__top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(90deg); position: absolute;
+                            bottom: 4rem; left: 2.7rem;">
+                            <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
+                            0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
+                            7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
+                        </div>
                     <div >
                         
                 </div>
@@ -113,7 +126,7 @@
 <!--Menú!-->            
             <section class="menu">
 
-                    <nav class="navigation">
+                    <div class="navigation">
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="#projects">Projects</a>
@@ -125,7 +138,7 @@
                                 <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
 
             </section>
 
@@ -155,6 +168,7 @@
                             </p>
                         </div>
 
+
 <!-- espacio-->     
 <br><br><br><br>
 
@@ -166,7 +180,7 @@
                         </p>
                         <div class="img__corazon">
                             <!-- tengo que añadirle el flex a este elemento para que afecte en li-->
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img src="assets/imgs/corazon.svg" alt="fun fact">
                         </div>
                         
                         <p>
@@ -174,8 +188,8 @@
                             always watching gameplays on Youtube.
                         </p>
                         <div class="img__corazon">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
                         </div>
                             
                         <p>
@@ -183,20 +197,20 @@
                             haven’t stop ever since. I got my first gaming computer on 2020.
                         </p>
                         <div class="img__corazon">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
                         </div>
 
                         <p>
                             Also, since literature is also my passion, I created a narrative
                             analysis schema for videogames as my <a href="https://eprints.ucm.es/id/eprint/51568/">MA’s final thesis</a>.
                         </p>
-                        <div class="img__corazon">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact">
-                            <img class="img__corazon_space" src="assets/imgs/corazon.svg" alt="fun fact"> 
+                        <div class="img__corazon space">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact">
+                            <img class="space" src="assets/imgs/corazon.svg" alt="fun fact"> 
                         </div>
                         
                         </div>

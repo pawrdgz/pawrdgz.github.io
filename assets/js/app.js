@@ -42,16 +42,16 @@ $(document).ready(function() {
         {
             marginTop:500
         }
-
      );
 
 
     // Dock the footer to the bottom of the page, but scroll up to reveal more
     // content if the page is scrolled far enough.
 
+    /*
     $('.footer').scrollToFixed( {
         bottom: 0,
         limit: $('.footer').offset().top
     });
-
+    */
 });
