@@ -16,12 +16,23 @@ $("body,html").animate({
 })
 
 
-// Esto es inicializar el fade-in 
-
+// Inicializar el fade-in 
 
 AOS.init();
 
-// Esto es el carroussel 
+// Menu open
+
+$(document).ready(function () {
+    var menuOpen = $('.js-menu-open');
+
+    menuOpen.click(function (){
+       $('html').toggleClass('menu-is-open');
+    })
+
+    });
+
+
+// Carroussel 
 
 new Splide('.splide', {
     type: 'loop',
