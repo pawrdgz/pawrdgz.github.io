@@ -239,13 +239,13 @@ p {
     visibility: hidden;
 }
 
-.menu-is-open .navigation {
+.menu-is-open .nav {
     top: 0;
 }
 
 .menu-open {
     position: relative;
-    z-index: 100;
+    z-index: 50;
 }
 
 .menu-open svg {
@@ -271,16 +271,16 @@ p {
 
 /*------------------NAVIGATION------------------*/
 
-.navigation {
-        align-items: center;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        left: 0;
-        position: fixed;
-        top: -150%;
-        width: 100%;
-        z-index: 0;
+.nav {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: -150%;
+    width: 100%;
+    z-index: 9;
 }
 
 .nav-link {
@@ -322,6 +322,8 @@ p {
     font-size: 1.9rem;
     font-weight: 400;
     text-transform: uppercase;
+    position: relative;
+    z-index: 0;
 }
 
 
@@ -456,6 +458,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         margin: 10rem;
+        position: relative;
         visibility: visible;
         z-index: 20;
     }
