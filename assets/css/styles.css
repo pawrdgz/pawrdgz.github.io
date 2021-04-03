@@ -255,7 +255,7 @@ p {
 .header {
     display: inline-block;
     float: right;
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
 
@@ -273,6 +273,10 @@ p {
 .arrow_top {
     padding-left: 74px;
     padding-top: 50px;
+}
+
+.billboard {
+    margin: 3rem 0;
 }
 
 .billboard_title {
@@ -492,12 +496,9 @@ footer {
 
 /*------------------HEADER------------------*/  
 
-
-
     .header {
         display: none;
     }
-
 
 /*------------------NAVIGATION------------------*/   
 
