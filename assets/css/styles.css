@@ -157,9 +157,7 @@ body {
     overflow-x: hidden;
 }
 
-.menu-is-open body {
-    overflow-y: hidden;
-}
+
 
 h1,
 h2,
@@ -316,13 +314,7 @@ p {
 .nav-item {
     padding: .5rem 0;
 }
-.navbar::before{
-    padding:5px;
-		border:1px solid blue;
-		margin-right:5px;
-		color:blue;
 
-}
 .nav-link {
     font-size: 2rem;
     text-transform: uppercase;
