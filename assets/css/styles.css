@@ -269,7 +269,6 @@ p {
 
 
 .menu-trigger {
-    position: absolute;
     position: fixed;
     z-index: 50;
 }
