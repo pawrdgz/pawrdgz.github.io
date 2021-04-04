@@ -244,9 +244,23 @@ p {
     visibility: hidden;
 }
 
+.menu-close {
+    display: none;
+}
+
 .menu-is-open .nav {
     top: 0;
 }
+
+.menu-is-open .menu-open {
+    display: none;
+}
+
+.menu-is-open .menu-close {
+    display: block;
+}
+
+/* Esto lo añadí para que el svg cambiara y no tener que añadir otro icono. No me funciona en mobile pero en web sí.
 
 .menu-is-open .one {
     top: 0;
@@ -270,13 +284,14 @@ p {
     translateY(30%)
     rotate(-45deg);
 }
+*/
 
-.menu-open {
+.menu-trigger {
     position: relative;
     z-index: 50;
 }
 
-.menu-open svg {
+.menu-trigger svg {
     fill:  var(--primary-color);
     height: 4rem;
     width: 4rem;

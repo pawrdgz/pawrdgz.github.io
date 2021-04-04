@@ -23,9 +23,9 @@ AOS.init();
 // Menu open
 
 $(document).ready(function () {
-    var menuOpen = $('.js-menu-open');
+    var menuToggle = $('.js-menu-toggle');
 
-    menuOpen.click(function (){
+    menuToggle.click(function (){
        $('html').toggleClass('menu-is-open');
     })
 
