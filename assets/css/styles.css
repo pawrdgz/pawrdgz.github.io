@@ -157,8 +157,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -271,7 +269,8 @@ p {
 
 
 .menu-trigger {
-    position: relative;
+    position: absolute;
+    position: fixed;
     z-index: 50;
 }
 
