@@ -347,7 +347,6 @@ p {
     font-weight: 100;
     justify-content: flex-start;
     line-height: var(--lineheight-normal);
-    margin-top: 1.5rem;
     stroke: none;
 }
 
