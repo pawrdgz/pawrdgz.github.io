@@ -301,11 +301,11 @@ p {
 /*------------------NAVIGATION------------------*/
 
 .nav {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    left: 0;
+    height: 25vh;
+    justify-content:flex-end;
+    right:5rem;
     position: fixed;
     top: -150%;
     transition: all .35s ease-in-out;
@@ -313,6 +313,16 @@ p {
     z-index: 9;
 }
 
+.nav-item {
+    padding: .5rem 0;
+}
+.navbar::before{
+    padding:5px;
+		border:1px solid blue;
+		margin-right:5px;
+		color:blue;
+
+}
 .nav-link {
     font-size: 2rem;
     text-transform: uppercase;
