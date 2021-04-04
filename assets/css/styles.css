@@ -270,6 +270,7 @@ p {
 
 .menu-trigger {
     position: fixed;
+    right: 2rem;
     z-index: 50;
 }
 
