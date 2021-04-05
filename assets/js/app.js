@@ -66,3 +66,45 @@ $(document).ready(function() {
     });
     */
 });
+
+
+// detectar dónde está el menú
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll <2000) {
+        $(".nav-item-projects").addClass("menu-is-active");
+    }  
+    
+    else {
+        $(".nav-item-projects").removeClass("menu-is-active");
+    } 
+
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if ((scroll >=2000) && (scroll <=3000)) {
+        $(".nav-item-about").addClass("menu-is-active");
+    }  
+
+    else {
+        $(".nav-item-about").removeClass("menu-is-active");
+    }
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >3000){
+        $(".nav-item-contact").addClass("menu-is-active");
+    }  
+    
+    else {
+        $(".nav-item-contact").removeClass("menu-is-active");
+    } 
+});
+
+
