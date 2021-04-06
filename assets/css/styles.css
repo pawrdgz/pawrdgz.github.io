@@ -241,7 +241,9 @@ p {
 }
 
 .menu-is-open .nav {
-    top: 0;
+    left: 23rem;
+    top: 8;
+    visibility: visible!important;
 }
 
 .menu-is-open .one {
@@ -305,14 +307,11 @@ p {
 /*------------------NAVIGATION------------------*/
 
 .nav {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     height: 25vh;
-    justify-content:center;
-    right: 0rem;
     position: fixed;
-    top: -150%;
-    transition: all .35s ease-in-out;
+    visibility: hidden;
     width: 100%;
     z-index: 9;
 }
@@ -420,6 +419,8 @@ p {
     max-width: 15rem;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(90%);
+    -webkit-box-shadow: 2px 2px 13px 4px #eae6ca; 
+    box-shadow: 2px 2px 13px 4px #eae6ca;
 }
 
 /*------------------PROJECTS------------------*/ 
