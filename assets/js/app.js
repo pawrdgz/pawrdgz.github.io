@@ -110,10 +110,17 @@ $(window).scroll(function() {
 // typed
 
 var typed = new Typed('.billboard_title_invert', {
-    strings: ['Tiramisu enjoyer', 'The Batman', 'UX Designer'],
+    strings: ['Tiramisu enjoyer','The Batman', 'UX Designer'],
     typeSpeed: 50,
     backSpeed: 40,
     smartBackspace: true,
   });
 
+
+  // smooth movement entre a en one page
+  
+  $('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+});
 

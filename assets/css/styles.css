@@ -241,8 +241,8 @@ p {
 }
 
 .menu-is-open .nav {
-    left: 23rem;
-    top: 8;
+    left: 26rem;
+    top: 5;
     visibility: visible!important;
 }
 
@@ -267,13 +267,6 @@ p {
         translateX(-40%)
         translateY(30%)
         rotate(-45deg);
-}
-
-.popup_menu {
-    background: var(--secondary-color);
-    padding: 2.5rem 2rem 2.5rem 2.5rem;
-    -webkit-box-shadow: 0px 0px 11px 7px rgba(200,169,104,0.25); 
-    box-shadow: 0px 0px 11px 7px rgba(200,169,104,0.25);
 }
 
 .menu-trigger {
@@ -309,7 +302,7 @@ p {
 .nav {
     align-items: flex-end;
     display: flex;
-    height: 25vh;
+    height: 20vh;
     position: fixed;
     visibility: hidden;
     width: 100%;
