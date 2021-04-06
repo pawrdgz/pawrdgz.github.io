@@ -350,9 +350,16 @@ p {
     stroke: none;
 }
 
-.subtitle__location{
+.subtitle__location {
     padding-top: 10px;
 }
+
+.subtitle__location_projects {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
 
 .subtitle_location_text {
     font-size: 1.9rem;
@@ -557,6 +564,10 @@ footer {
 
     .header {
         display: none;
+    }
+
+    .header_projects {
+        display: inline-block;
     }
 
 /*------------------NAVIGATION------------------*/   
