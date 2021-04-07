@@ -597,6 +597,10 @@ footer {
         line-height: 1.5;
     }
 
+    .p__projects {
+        font-size: 2rem;
+    }
+
     .projects, .contact {
         margin-top: 20rem;
     }
@@ -760,6 +764,13 @@ footer {
     footer {
         margin-top: 30rem;
     }
+
+/*------------------OTHER PROJECTS------------------*/
+
+.first {
+    margin-left: 30rem;
+}
+
 
 }
   /*---------------------------------END RESPONSIVE 960px---------------------------------*/
