@@ -533,7 +533,20 @@ footer {
     margin: 5rem 0 4rem 0;
 }
 
+.data {
+    margin-bottom: 4rem;
+}
+
 .data::before  {
+    background: #303030;
+    content:'';
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%;
+}
+
+.firstrow::before  {
     background: #303030;
     content:'';
     display: block;
