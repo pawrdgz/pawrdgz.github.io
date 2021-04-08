@@ -346,6 +346,10 @@ p {
     margin: 3rem 0;
 }
 
+.billboard__projects {
+    margin: 0 0 5rem 0;
+}
+
 .billboard_title {
     display: flex;
     justify-content: flex-start;
@@ -564,6 +568,15 @@ footer {
     width: 100%;
 }
 
+.overview::before  {
+    background: #303030;
+    content:'';
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%;
+}
+
 .projects__year::after {
     background: #303030;
     content:'';
@@ -751,6 +764,11 @@ footer {
     .img__slider__projects {
         height: auto;
         max-width: 60rem;
+    }
+
+    .img__slider__projects {
+        height: auto;
+        max-width: 100rem;
     }
 /*------------------ABOUT------------------*/
 
