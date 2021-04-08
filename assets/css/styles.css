@@ -533,7 +533,7 @@ footer {
     margin: 5rem 0 4rem 0;
 }
 
-.data {
+.data, .row__projects {
     margin-bottom: 4rem;
 }
 
@@ -547,6 +547,15 @@ footer {
 }
 
 .firstrow::before  {
+    background: #303030;
+    content:'';
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%;
+}
+
+.row__projects::before  {
     background: #303030;
     content:'';
     display: block;
