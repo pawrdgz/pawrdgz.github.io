@@ -236,7 +236,7 @@ p {
 }
 
 .column__projects {
-    margin: 4rem 2.8rem 0 2.8rem;
+    padding: 4rem 2.8rem 0 2.8rem;
 }
 
 .coins {
@@ -347,7 +347,7 @@ p {
 }
 
 .billboard__projects {
-    margin: 0 0 5rem 0;
+    padding: 0 0 5rem 0;
 }
 
 .billboard_title {
@@ -386,6 +386,13 @@ p {
     text-transform: uppercase;
     position: relative;
     z-index: 0;
+}
+
+.end__projects {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0 0 0;
 }
 
 /*------------------IMAGES------------------*/
@@ -513,6 +520,13 @@ footer {
     text-align: center;
 }
 
+.footer__projects {
+    background: #F7F2E8 !important;
+    color: var(--primary-color) !important;
+    margin-top: 10rem;
+    padding: 2em 0;
+    text-align: center;
+}
 
 /*------------------OTHER PROJECTS-------------------*/
 
@@ -525,20 +539,12 @@ footer {
     margin: 0 0 0 6rem;
 }
 
-.projects__year{
-    margin: 2rem 0 2rem 0;
-}
-
-.projects__motive {
-    margin: 5rem 0 4rem 0;
-}
-
-.projects__tags {
-    margin: 5rem 0 4rem 0;
+.projects__year, .projects__motive, .projects__tags {
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 .data, .row__projects {
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .data::before  {
@@ -577,6 +583,12 @@ footer {
     width: 100%;
 }
 
+.overview__gif {
+    height: auto;
+    margin: auto;
+    max-width: 80%;
+}
+
 .projects__year::after {
     background: #303030;
     content:'';
@@ -605,6 +617,11 @@ footer {
     position: relative;
     top: 2rem;
     width: 100%;
+}
+
+.thankyou {
+    font-size: 5rem;
+    text-align: center;
 }
 
 
@@ -728,6 +745,8 @@ footer {
         top: 2.7rem;
     }
 
+    
+
 /*------------------IMAGES------------------*/ 
 
     .img__coin {
@@ -781,7 +800,7 @@ footer {
     }
 
     .column__projects__first {
-        width: 35%;
+        width: 40%;
     }
 
 /*------------------CONTACT------------------*/ 
@@ -808,9 +827,12 @@ footer {
 /*------------------OTHER PROJECTS------------------*/
 
 .first {
-    margin-left: 30rem;
+    padding-left: 20rem;
 }
 
+.borderright {
+    border-right: solid thin #303030;
+}
 
 }
   /*---------------------------------END RESPONSIVE 960px---------------------------------*/
