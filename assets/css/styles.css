@@ -570,19 +570,6 @@ footer {
 
 /*------------------OTHER PROJECTS-------------------*/
 
-.data__left {
-    display: inline-block;
-}
-
-.data__right {
-    display: inline-block;
-    margin: 0 0 0 6rem;
-}
-
-.projects__year, .projects__motive, .projects__tags {
-    padding: 2rem 0rem 2rem 0rem;
-}
-
 .data, .row__projects {
     padding-bottom: 4rem;
 }
@@ -605,14 +592,6 @@ footer {
     width: 100%;
 }
 
-.row__projects::before  {
-    background: #303030;
-    content:'';
-    display: block;
-    height: 1px;
-    position: relative;
-    width: 100%;
-}
 
 .overview::before  {
     background: #303030;
@@ -633,6 +612,10 @@ footer {
     height: auto;
     margin: auto;
     max-width: 60%;
+}
+
+.projects__year, .projects__motive, .projects__tags {
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 .projects__year::after {
@@ -662,6 +645,15 @@ footer {
     height: 1px;
     position: relative;
     top: 2rem;
+    width: 100%;
+}
+
+.row__projects::before  {
+    background: #303030;
+    content:'';
+    display: block;
+    height: 1px;
+    position: relative;
     width: 100%;
 }
 
