@@ -388,6 +388,17 @@ p {
     z-index: 0;
 }
 
+.subtitle_location_text_projects {
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    position: fixed;
+    right: 1.5rem;
+    text-transform: uppercase;
+    top: 4rem;
+    z-index: 50;
+}
+
 .end__projects {
     align-items: center;
     display: flex;
@@ -743,6 +754,17 @@ footer {
         position: absolute;
         right: 4rem;
         top: 2.7rem;
+    }
+
+    .subtitle_location_text_projects {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+        position: fixed;
+        right: 1.5rem;
+        text-transform: uppercase;
+        top: 2rem;
+        z-index: 50;
     }
 
     
