@@ -117,7 +117,7 @@ var typed = new Typed('.billboard_title_invert', {
   });
 
 
-  // smooth movement entre a en one page
+// smooth movement entre a en one page
   
   $('a[href*=\\#]').on('click', function(event){     
     event.preventDefault();

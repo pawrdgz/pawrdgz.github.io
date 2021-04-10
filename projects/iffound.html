@@ -2,27 +2,232 @@
 <html lang="en">
 
     <head>
-        
+
         <meta charset="utf-8">
         <meta name="author" content="Paula Rodriguez Ocaña">
         <meta name="description" content="Paula Rodriguez Portfolio">
         <meta name="keywords" content="portfolio, projects, design">
-        <meta name="robots" content="index"/>
+        <meta name="robots" content="index" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <title>Paula Rodríguez Portfolio</title>
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap"
             rel="stylesheet">
-        <link href="assets/css/styles.css" rel="stylesheet" />
+        
+        <link rel="stylesheet" href="../assets/js/splide-2.4.21/dist/css/splide.min.css">
+        <link rel="stylesheet"
+            href="../assets/js/splide-2.4.21/dist/css/themes/splide-sea-green.min.css">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- CSS propio-->
+        <link href="../assets/css/styles.css" rel="stylesheet"/>
+
+        <link rel="icon" href="../assets/imgs/favicon_lion.ico"/>
+
     </head>
 
-<body>
-	
-</body>
+    <body>
+
+<!--Title-->
+        <header id="header" class="header_projects">
+            <div class="wrapper">
+                <div class="subtitle__location_projects">
+                    <a href="../index.html" class="subtitle_location_text_projects">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+<!--Title!-->
+
+    <div class="wrapper">
+        <h2>
+            If Found... <br/>UX Case Study
+        </h2>
+    </div>
+
+<!--Slider!-->
+            <section class="billboard__projects">
+                        <div class="img__cover__container">
+                            <img src="../assets/imgs/iffound/iffound_cover.webp" alt="" class="img__cover">
+                        </div>
+            </section>
+
+<!--Datos-->
+            <section class="data" data-aos="fade-up" data-aos-duration="1500">
+                <div class="wrapper">
+                    <div class="row"> 
+                        <div class="column__projects__first">
+                            <ul>                        
+                            <li class="projects__year">
+                                    <h4><em>year</em></h4>
+                                    <h4>2020</h4>
+                            </li>
+                            <li class="projects__motive">
+                                    <h4><em>motive</em></h4>
+                                    <h4>Self study</h4>
+                            </li>
+                            <li class="projects__tags">
+                                    <h4><em>tags</em></h4>
+                                    <h4>UI/UX Design,   Visual Novel,   Videogames</h4>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="column__projects first">
+                            <p class="p__projects">
+                                <strong>If Found… </strong>(2019), by DREAMFEEL studio is a visual novel in which 
+                                the reader will advance by gradually erasing the screen. You play as Kasio, a trans 
+                                woman living in the early 1990s in Ireland, a background that serves to downplay issues 
+                                such as transitioning and social acceptance.</p>                                                 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!--Row 1-->
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h3>Overview</h3>                          
+                <p class="p__projects">
+                    Although we might think that the erasing system is arbitrary and rather not important,
+                    it downplays a metaphor in which the character goes on erasing her past in order to become a new individual. 
+                    This mechanic is quite easy to understand, yet there are some UI things that could be changed in order 
+                    to upgrade the experience.</p>
+
+                <p class="p__projects spaceinbetween">
+                    Before we begin, we must acknowledge that the game plays better in its mobile version 
+                    (tablets and mobile phones), as there are some systems that feel uneasy on PC 
+                    (e.g. The erasing system itself or the menu navigation, which consists in dragging the screen, both shown in the next images).</p>
+            </div>
+            <div class="column__projects">
+                <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_intro.gif"/> 
+                <br/>
+                <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_navigation.gif"/>                                                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Row 2--> 
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h4>Problem</h4>                          
+                <p class="p__projects">
+                    Firstly, the UI is almost non existent, as the only menu that we encounter 
+                    is the Chapters and Settings. Nonetheless, the player must not do any other action than erasing the screen.</p>
+
+                <p class="p__projects">
+                    And here we mention the first problem: the mechanic of erasing the screen. 
+                    It is vaguely shown at the beginning and although it is easily understood on mobile due to the nature of the device, 
+                    it might be hard to comprehend on PC.</p> 
+<br/>
+                <h4 class="spaceinbetween">Solution</h4>                          
+                <p class="p__projects">
+                    Since there is no proper call to action -in the PC version- that might tell the user to drag instead of 
+                    just clicking the screen, I would add an indicator of what the user should do. This is done by simply
+                    adding a visual cue in the PC version.</p>
+    
+            </div>
+            <div class="column__projects">
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_ui_pc.webp"/>
+                    <figcaption class="caption">PC screenshot</figcaption>
+                </figure>    
+
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_ui_pcupgrade.webp"/>
+                    <figcaption class="caption">Solution</figcaption>
+                </figure>  
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!--Row 3-->
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h4>Problem</h4>                          
+                <p class="p__projects">
+                    Throughout the experience, we find some Irish words that are accompanied with a cross (which are actually Irish Celtic Crosses). 
+                    This indicates that an explanation for the word can be found, although it is rather difficult to understand that it’s a clickable 
+                    item or that it works as a Glossary.</p>
+
+<br/>
+                <h4 class="spaceinbetween double">Solution</h4>                          
+                <p class="p__projects">
+                    To solve the problematic of the player not knowing that it is a clickable item, for the first time that a cross appears, 
+                    I would add a visual cue. This would lead the user into clicking on the cross at the bottom left 
+                    of the screen and thus showing how it works.</p>
+    
+            </div>
+            <div class="column__projects">
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_cross.webp"/>
+                    <figcaption class="caption">Example of the cross item</figcaption>
+                </figure>    
+
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_crossupgrade.webp"/>
+                    <figcaption class="caption">Solution</figcaption>
+                </figure>  
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--Thank you-->
+<section class="end__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <img class="overview__img" src="../assets/imgs/iffound/if_found.jpg" alt="">
+        <p class="thankyou">Thank you!</p>
+    </div>
+
+    <div id="arrowbottom" class="arrow__top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 7%; height: auto; transform: rotateZ(-90deg); position: absolute;
+        bottom: -10rem; left: 7rem;">
+            <path d="M508.9 248.5l-160-160c-4.2-4.2-10.9-4.2-15.1 0-4.2 4.2-4.2 10.9 0 15.1l141.8 141.8H10.7C4.8 245.3 
+            0 250.1 0 256s4.8 10.7 10.7 10.7h464.9L333.8 408.5c-4.2 4.2-4.2 10.9 0 15.1 2.1 2.1 4.8 3.1 7.5 3.1s5.5-1 
+            7.5-3.1l160-160c4.2-4.2 4.2-11 .1-15.1z" fill="#303030"/></svg>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer__projects">
+            <div class="wrapper">
+                <p>Paula Rodríguez, All rights reserved ©2021</p>
+            </div>
+        </footer>
+
+        <!-- Javascript-->
+
+                <!-- typed-->
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <!-- slider de projects-->
+                <script src="../assets/js/splide-2.4.21/dist/js/splide.min.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="../assets/js/app.js"></script>
+                <!-- pruebas del menú sticky-->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+                <script src="../assets/js/ScrollToFixed/jquery-scrolltofixed.js" type="text/javascript"></script>
+
+
+    </body>
 
 </html>
