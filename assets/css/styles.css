@@ -141,6 +141,28 @@ button::-moz-focus-inner {
 
 }
 
+/*------------------FONTS------------------*/
+
+@font-face {
+    font-family: 'Glegoo';
+    src: local(Glegoo), local(Glegoo), local(Glegoo), 
+    url('.assets/fonts/glegoo-regular-webfont.woff') format('woff'),
+    url('.assets/fonts/glegoo-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: local(Noto Sans), local(NotoSans), local(Noto-Sans), 
+    url('.assets/fonts/notosans-regular-webfont.woff') format('woff'),
+    url('.assets/fonts/notosans-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /*------------------GLOBAL------------------*/
 
@@ -535,7 +557,7 @@ p {
 
 .p__mail {
     font-size: 2.4rem;
-    font-weight: 800;
+    font-weight: 600;
     line-height: var(--lineheight-normal);
     word-wrap: normal;
 }
