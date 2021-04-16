@@ -901,6 +901,7 @@ footer {
 
 
     .img__mario { 
+        display: inline;
         height: auto;
         margin: 13rem;
         max-width: 80%;
