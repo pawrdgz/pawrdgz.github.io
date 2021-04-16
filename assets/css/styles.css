@@ -155,6 +155,17 @@ button::-moz-focus-inner {
 }
 
 @font-face {
+    font-family: 'Glegoo Bold';
+    src: local(GlegooBold), local(Glegoo-Bold),
+    url('../fonts/glegoo-bold-webfont.woff2') format('woff2'),
+    url('../fonts/glegoo-bold-webfont.woff') format('woff');
+
+    font-weight: 900;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Noto Sans';
     src: local(Noto Sans), local(NotoSans), local(Noto-Sans), 
     url('../fonts/notosans-regular-webfont.woff2') format('woff2'),
