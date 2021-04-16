@@ -265,6 +265,10 @@ p {
     display: none;
 }
 
+.arrow__bottom {
+    display: none;
+}
+
 .menu-open {
     display: inline-block;
 }
@@ -375,11 +379,6 @@ p {
 
 /*------------------BILLBOARD------------------*/
 
-.arrow_top {
-    padding-left: 74px;
-    padding-top: 50px;
-}
-
 .billboard {
     margin: 3rem 0;
 }
@@ -461,7 +460,7 @@ p {
     display: inline;
     height: auto;
     margin: 18rem 0 7rem;
-    max-width: 28%;
+    max-width: 90%;
 }
 
 .img__corazon {
@@ -490,11 +489,8 @@ p {
 }
 
 .img__mario { 
-/*--no sé si faltaría un display: inline, o si debería trabajar con !important--*/
-    float: left;
-    height: 100px;
-    margin: 0rem 1rem;
-    max-width: 20%;
+    height: auto;
+    max-width: 80%;
 }
 
 .img__slider {
@@ -550,12 +546,14 @@ p {
 }
 
 .p__contact {
+    display: inline-block;
     font-size: 2rem;
     font-weight: 500;
-    padding-top: 4rem;
+    margin-top: 4rem;
 }
 
 .p__mail {
+    display: inline-block;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: var(--lineheight-normal);
@@ -729,6 +727,26 @@ footer {
         display: inline;
     }
 
+    .arrow__top svg {
+        bottom: 3rem;
+        height: auto;
+        left: 3rem;
+        position: absolute;
+        max-width: 8%;
+    }    
+
+    .arrow__bottom {
+        display: inline;
+    }
+
+    .arrow__bottom svg {
+        bottom: -30rem;
+        height: auto;
+        left: 3rem;
+        position: absolute;
+        max-width: 8%;
+    }
+
     .column {
         width: 33%;
     }
@@ -753,9 +771,6 @@ footer {
         width: 100%;
     }
 
-    .splide {
-        margin-top: 8rem;
-    }
 
 
 /*------------------HEADER------------------*/  
@@ -770,7 +785,9 @@ footer {
 
 /*------------------SLIDER------------------*/   
 
-
+    .splide {
+        margin-top: 8rem;
+    }
 
 /*------------------BILLBOARD------------------*/   
 
@@ -827,11 +844,15 @@ footer {
         text-align: center;
     }
 
+    .hidden__desktop {
+        display: none;
+    }
+
     .img__coin {
         display: inline;
         height: auto;
         margin: 8rem 0;
-        max-width: 10%;
+        max-width: 35%;
     }
 
     .img__corazon {
@@ -853,10 +874,9 @@ footer {
 
 
     .img__mario { 
-        float: left;
-        height: 125px;
-        margin: 13rem 3rem;
-        max-width: 20%;
+        height: auto;
+        margin: 13rem;
+        max-width: 80%;
     }
 
     .img__slider {
@@ -901,11 +921,13 @@ footer {
     }
 
     .p__contact {
+        display: inline-block;
         font-size: 3rem;
-        padding-top: 10rem;
+        margin: 10rem 0 0;
     }
 
     .p__mail {
+        display: inline-block;
         font-size: 7rem;
     }
 
