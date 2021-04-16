@@ -146,8 +146,8 @@ button::-moz-focus-inner {
 @font-face {
     font-family: 'Glegoo';
     src: local(Glegoo),
-    url('../fonts/glegoo-regular-webfont.woff2') format('woff2'),
-    url('../fonts/glegoo-regular-webfont.woff') format('woff');
+    url('../fonts/glegoo/glegoo-regular-webfont.woff2') format('woff2'),
+    url('../fonts/glegoo/glegoo-regular-webfont.woff') format('woff');
 
     font-weight: 400;
     font-style: normal;
@@ -157,8 +157,8 @@ button::-moz-focus-inner {
 @font-face {
     font-family: 'Glegoo Bold';
     src: local(GlegooBold), local(Glegoo-Bold),
-    url('../fonts/glegoo-bold-webfont.woff2') format('woff2'),
-    url('../fonts/glegoo-bold-webfont.woff') format('woff');
+    url('../fonts/glegoo/glegoo-bold-webfont.woff2') format('woff2'),
+    url('../fonts/glegoo/glegoo-bold-webfont.woff') format('woff');
 
     font-weight: 900;
     font-style: bold;
@@ -168,8 +168,8 @@ button::-moz-focus-inner {
 @font-face {
     font-family: 'Noto Sans';
     src: local(Noto Sans), local(NotoSans), local(Noto-Sans), 
-    url('../fonts/notosans-regular-webfont.woff2') format('woff2'),
-    url('../fonts/notosans-regular-webfont.woff') format('woff');
+    url('../fonts/notosans/notosans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/notosans/notosans-regular-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
