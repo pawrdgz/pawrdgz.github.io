@@ -549,7 +549,11 @@ p {
     background-color: var(--primary-color);
 }
 
-  .text {
+.spaceinbetween {
+    margin-top: 7rem;
+}
+
+.text {
     color: white;
     font-size: 2.5rem;
     position: absolute;
@@ -922,7 +926,6 @@ footer {
 
     .sameline {
         display: flex;
-
     }
 /*------------------ABOUT------------------*/
 
@@ -936,6 +939,10 @@ footer {
 
     .column__projects__first {
         width: 40%;
+    }
+
+    .spaceinbetween {
+        margin-top: 0rem;
     }
 
 /*------------------CONTACT------------------*/ 
