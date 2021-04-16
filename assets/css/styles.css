@@ -900,8 +900,7 @@ footer {
     }
 
 
-    .img__mario { 
-        display: inline;
+    .img__mario {
         height: auto;
         margin: 13rem;
         max-width: 80%;
