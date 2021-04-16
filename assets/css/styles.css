@@ -175,6 +175,16 @@ button::-moz-focus-inner {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: local(NotoSansBold), local(Noto-Sans-Bold), 
+    url('../fonts/notosans/notosans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/notosans/notosans-bold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: bold;
+    font-display: swap;
+}
+
 
 /*------------------GLOBAL------------------*/
 
@@ -253,8 +263,9 @@ a:active {
 
 p {
     color: var(--primary-color);
-    font-size: 1.3rem; /*Tamaño de fuente: 13px */
-    font-weight: 700;
+    font-family: 'Noto Sans';
+    font-size: 1.4rem; /*Tamaño de fuente: 15px */
+    font-weight: 800;
     line-height: 1.7;
     position: relative;
     z-index: 100;
@@ -565,9 +576,10 @@ p {
 }
 
 .p__mail {
+    font-family: 'Noto Sans Bold';
     display: inline-block;
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: 800;
     line-height: var(--lineheight-normal);
     word-wrap: normal;
 }
