@@ -206,14 +206,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'Glegoo Bold';
     color: transparent;
     font-size: 4.6rem; /*Tamaño de fuente: 46px */
-    font-weight: 900;
+    font-weight: 400;
     line-height: var(--lineheight-normal);
+    margin: 3.2rem  0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--primary-color);
-    margin: 3.2rem  0;
-    
 }
 
 h3 {
