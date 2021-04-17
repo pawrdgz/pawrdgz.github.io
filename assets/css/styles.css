@@ -970,6 +970,14 @@ footer {
 
 /*------------------OTHER PROJECTS------------------*/
 
+    .arrow__bottom__projects svg {
+        bottom: 0rem;
+        height: auto;
+        left: 3rem;
+        position: absolute;
+        max-width: 8%;
+    }
+
     .first {
         padding-left: 20rem;
     }
