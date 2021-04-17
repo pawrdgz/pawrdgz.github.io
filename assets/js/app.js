@@ -1,24 +1,4 @@
-// Flecha que te redirige al top 
-var $arrow = $("#arrowbottom a");
-$("#arrowbottom").on("click", function() {
-$("body,html").animate({
-    scrollTop: 0
-}, 1250)
-})
 
-// Flecha que dirige hacia abajo 
-
-var $arrow = $("#arrowtop a");
-$("#arrowtop").on("click", function() {
-$("body,html").animate({
-    scrollTop: 1400
-}, 1300)
-})
-
-
-// Inicializar el fade-in 
-
-AOS.init();
 
 // Menu open
 
@@ -29,10 +9,33 @@ $(document).ready(function () {
        $('html').toggleClass('menu-is-open');
     })
 
+// Flecha que dirige hacia top     
+
+    var $arrow = $("#arrowbottom a");
+        $("#arrowbottom").on("click", function() {
+        $("body,html").animate({
+            scrollTop: 0
+        }, 1250)
+    })
+
+// Flecha que dirige hacia abajo 
+
+    var $arrow = $("#arrowtop a");
+        $("#arrowtop").on("click", function() {
+        $("body,html").animate({
+            scrollTop: 1400
+        }, 1300)
+    })
+
+
     });
 
+// Inicializar el fade-in 
 
-// Carroussel 
+AOS.init();
+
+
+// Carrusel 
 
 new Splide('.splide', {
     type: 'loop',
@@ -40,7 +43,6 @@ new Splide('.splide', {
     gap: '8.4rem',
     focus: 'center'
 }).mount();
-
 
 // Intento de menú sticky
 
@@ -55,16 +57,6 @@ $(document).ready(function() {
         }
      );
 
-
-    // Dock the footer to the bottom of the page, but scroll up to reveal more
-    // content if the page is scrolled far enough.
-
-    /*
-    $('.footer').scrollToFixed( {
-        bottom: 0,
-        limit: $('.footer').offset().top
-    });
-    */
 });
 
 

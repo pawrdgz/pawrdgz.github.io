@@ -504,7 +504,9 @@ p {
 
 .img__cover__container {
     display: flex;
+    height: auto;
     justify-content: center;
+    max-width: 100%;
 }
 
 .space {
@@ -603,6 +605,9 @@ p {
 footer {
     background: #F7F2E8 !important;
     color: var(--primary-color) !important;
+    font-family: 'Noto Sans';
+    font-size: 1.4rem; /*Tamaño de fuente: 15px */
+    font-weight: 800;
     margin-top: 10rem;
     padding: 2em 0;
     text-align: center;
@@ -611,6 +616,9 @@ footer {
 .footer__projects {
     background: #F7F2E8 !important;
     color: var(--primary-color) !important;
+    font-family: 'Noto Sans';
+    font-size: 1.4rem; /*Tamaño de fuente: 15px */
+    font-weight: 800;
     margin-top: 10rem;
     padding: 2em 0;
     text-align: center;
