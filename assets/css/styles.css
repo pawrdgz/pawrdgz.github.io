@@ -222,8 +222,6 @@ h2 {
     font-weight: 400;
     line-height: var(--lineheight-normal);
     margin: 3.2rem  0;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
 }
 
 h3 {
@@ -360,6 +358,11 @@ p {
     width: 5.2rem;
 }
 
+.stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 128rem;
@@ -425,7 +428,6 @@ p {
     font-weight: 100;
     justify-content: flex-start;
     line-height: var(--lineheight-normal);
-    stroke: none;
 }
 
 .subtitle__location {
@@ -485,7 +487,7 @@ p {
     max-width: 100%;
 
 }
-
+/*
 .img__corazon {
     display: flex;
     max-width: 20%;
@@ -495,7 +497,7 @@ p {
     transform: translateY(-150%);
     z-index: 0;  
 }
-
+*/
 .img__cover {
     height: auto;
     max-width: 80%;
@@ -507,10 +509,6 @@ p {
     height: auto;
     justify-content: center;
     max-width: 100%;
-}
-
-.space {
-    margin-right: 0.5rem;
 }
 
 .img__mario { 
@@ -534,21 +532,25 @@ p {
 
 /*------------------PROJECTS------------------*/ 
 
-.container:hover .overlay {
+.container:hover .text::before,
+.container:hover .text span  {
     opacity: 0.7;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
+.text::before {
     background-color: var(--primary-color);
+    bottom: 0;
+    content:'';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s ease;
+    width: 100%;
+    z-index: 0;
 }
 
 .spaceinbetween {
@@ -558,15 +560,62 @@ p {
 .text {
     color: white;
     font-size: 2.5rem;
+    height: 100%;
+    padding: 6rem;
     position: absolute;
-    top: 30%;
-    left: 40%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
+.text span {
+    opacity: 0;
+    position: relative;
+    transition: .5s ease;
+    z-index: 1;
+}
+
+/*------------------ABOUT------------------*/
+
+.description {
+    position: relative;
+}
+
+.description::before {
+    content: '';
+    background: url(../imgs/corazon.svg) repeat-x;
+    background-size: contain;
+    height: 50px;
+    left: -1rem;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+}
+
+.corazon-1::before {
+    width: 50px;
+}
+
+.corazon-2::before {
+    width: 110px;
+}
+
+.corazon-3::before {
+    width: 170px;
+}
+
+.corazon-4::before {
+    width: 230px;
+}
+
+/*------------------MARIO SEQUENCE------------------*/
+
+.mario__sequence {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0rem;
+}
 
 /*------------------CONTACT------------------*/
 
@@ -588,15 +637,6 @@ p {
     font-weight: 800;
     line-height: var(--lineheight-normal);
     word-wrap: normal;
-}
-
-
-/*------------------MARIO SEQUENCE------------------*/
-
-.mario__sequence {
-    display: flex;
-    justify-content: center;
-    margin: 10rem 0rem;
 }
 
 /*------------------FOOTER-------------------*/
@@ -890,7 +930,7 @@ footer {
         margin: 8rem 0;
         max-width: 30%;
     }
-
+/*
     .img__corazon {
         display: flex;
         max-width: 15%;
@@ -899,7 +939,7 @@ footer {
         transform: translateY(-140%);
         z-index: 0;
     }
-
+*/
     .img__cover {
         display: flex;
         justify-content: center;
@@ -949,9 +989,6 @@ footer {
         width: 40%;
     }
 
-    .spaceinbetween {
-        margin-top: 0rem;
-    }
 
 /*------------------CONTACT------------------*/ 
     .contact__text {
@@ -992,10 +1029,6 @@ footer {
 
     .borderright {
         border-right: solid thin #303030;
-    }
-
-    .spaceinbetween {
-        margin-top: 8rem;
     }
 
     .double {
