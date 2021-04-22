@@ -290,10 +290,6 @@ p {
     display: none;
 }
 
-.menu-open {
-    display: inline-block;
-}
-
 .column {
     margin: 4rem 4rem 0 4.4rem;
 }
@@ -316,33 +312,22 @@ p {
     visibility: hidden;
 }
 
+.menu-close {
+    display: none;
+}
+
+.menu-is-open .menu-close {
+    display: block;
+}
+
+.menu-is-open .menu-open {
+    display: none;
+}
+
 .menu-is-open .nav {
-    left: 26rem;
-    top: 5;
+    left: 27rem;
+    top: 6;
     visibility: visible!important;
-}
-
-.menu-is-open .one {
-    top: 0;
-    transition: all 0.3s ease-in-out;
-    transform: 
-        rotate(45deg) 
-        translateX(10%)
-        translateY(-5%);
-}
-
-.menu-is-open .two {
-    opacity: 0;
-    transition-duration:0.3s;
-}
-
-.menu-is-open .three {
-    top:0;
-    transition: all 0.3s ease-in-out;
-    transform: 
-        translateX(-40%)
-        translateY(30%)
-        rotate(-45deg);
 }
 
 .menu-trigger {
@@ -354,8 +339,8 @@ p {
 
 .menu-trigger svg {
     fill:  var(--primary-color);
-    height: 5.2rem;
-    width: 5.2rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 .stroke {
@@ -383,8 +368,9 @@ p {
 .nav {
     align-items: flex-end;
     display: flex;
-    height: 20vh;
+    height: 21vh;
     position: fixed;
+    text-align: right;
     visibility: hidden;
     width: 100%;
     z-index: 9;
@@ -401,7 +387,7 @@ p {
 
 .menu-is-active {
     text-decoration: line-through;
-  }
+}
 
 /*------------------BILLBOARD------------------*/
 
