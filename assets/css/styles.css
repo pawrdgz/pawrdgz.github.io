@@ -971,11 +971,6 @@ footer {
         width: 50%;
     }
 
-    .column__projects__first {
-        width: 40%;
-    }
-
-
 /*------------------CONTACT------------------*/ 
     .contact__text {
         margin: 10rem 5.4rem 4rem 0rem;
@@ -1007,10 +1002,6 @@ footer {
         left: 3rem;
         position: absolute;
         max-width: 8%;
-    }
-
-    .first {
-        padding-left: 20rem;
     }
 
     .borderright {
