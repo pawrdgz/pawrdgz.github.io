@@ -308,8 +308,19 @@ p {
 }
 
 .menu {
-    display: none;
-    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    right: 2.5rem;
+    text-align: end;
+    top: 12rem;
+    transition: opacity 0.5 ease-in-out;
+    opacity: 0;
+    z-index: 9;
+}
+
+.menu-is-open .menu {
+    opacity: 1;
+    pointer-events: initial;
 }
 
 .menu-close {
@@ -322,12 +333,6 @@ p {
 
 .menu-is-open .menu-open {
     display: none;
-}
-
-.menu-is-open .nav {
-    left: 27rem;
-    top: 6;
-    visibility: visible!important;
 }
 
 .menu-trigger {
@@ -365,18 +370,8 @@ p {
 
 /*------------------NAVIGATION------------------*/
 
-.nav {
-    align-items: flex-end;
-    display: flex;
-    height: 21vh;
-    position: fixed;
-    text-align: right;
-    visibility: hidden;
-    width: 100%;
-    z-index: 9;
-}
 
-.nav-item {
+.nav-item-projects, .nav-item-about, .nav-item-contact {
     padding: .5rem 0;
 }
 
@@ -473,17 +468,7 @@ p {
     max-width: 100%;
 
 }
-/*
-.img__corazon {
-    display: flex;
-    max-width: 20%;
-    margin-left: -2rem;
-    opacity: 50%;
-    position: relative;
-    transform: translateY(-150%);
-    z-index: 0;  
-}
-*/
+
 .img__cover {
     height: auto;
     max-width: 80%;
@@ -575,7 +560,7 @@ p {
     left: -1rem;
     opacity: 0.5;
     position: absolute;
-    top: 0%;
+    top: -20%;
     z-index: -1;
 }
 
@@ -821,9 +806,11 @@ footer {
     .menu {
         display: flex;
         justify-content: flex-end;
-        margin: 10rem;
+        margin-right: 7rem;
+        margin-top: 4rem;
+        pointer-events: initial;
         position: relative;
-        visibility: visible;
+        opacity: 1;
         z-index: 20;
     }
 
@@ -916,16 +903,7 @@ footer {
         margin: 8rem 0;
         max-width: 30%;
     }
-/*
-    .img__corazon {
-        display: flex;
-        max-width: 15%;
-        margin-left: -2rem;
-        opacity: 50%;
-        transform: translateY(-140%);
-        z-index: 0;
-    }
-*/
+
     .img__cover {
         display: flex;
         justify-content: center;
@@ -1014,5 +992,28 @@ footer {
 
 
 }
-  /*---------------------------------END RESPONSIVE 960px---------------------------------*/
+
+/*---------------------------------END RESPONSIVE 960px---------------------------------*/
   
+
+/*---------------------------------START RESPONSIVE 959px---------------------------------*/
+
+@media (max-width: 959px ) {
+    .menu {
+        pointer-events: none;
+        position: fixed;
+        right: 2.5rem;
+        text-align: end;
+        top: 12rem;
+        transition: opacity 0.5 ease-in-out;
+        opacity: 0;
+        z-index: 9;
+    }
+    
+    .menu-is-open .menu {
+        opacity: 1;
+        pointer-events: initial;
+    }
+}
+
+/*---------------------------------END RESPONSIVE 959px---------------------------------*/

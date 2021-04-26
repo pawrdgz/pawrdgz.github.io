@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 // Flecha que dirige hacia top     
 
-    var $arrow = $("#arrowbottom a");
+    $("#arrowbottom a");
         $("#arrowbottom").on("click", function() {
         $("body,html").animate({
             scrollTop: 0
@@ -20,13 +20,14 @@ $(document).ready(function () {
 
 // Flecha que dirige hacia abajo 
 
-    var $arrow = $("#arrowtop a");
+    $("#arrowtop a");
         $("#arrowtop").on("click", function() {
         $("body,html").animate({
             scrollTop: 1400
         }, 1300)
     })
 
+    
 
     });
 
