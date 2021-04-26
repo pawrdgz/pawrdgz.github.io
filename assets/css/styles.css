@@ -170,6 +170,7 @@ button::-moz-focus-inner {
     src: local(Noto Sans), local(NotoSans), local(Noto-Sans), 
     url('../fonts/notosans/notosans-regular-webfont.woff2') format('woff2'),
     url('../fonts/notosans/notosans-regular-webfont.woff') format('woff');
+    
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -180,6 +181,7 @@ button::-moz-focus-inner {
     src: local(NotoSansBold), local(Noto-Sans-Bold), 
     url('../fonts/notosans/notosans-bold-webfont.woff2') format('woff2'),
     url('../fonts/notosans/notosans-bold-webfont.woff') format('woff');
+    
     font-weight: 800;
     font-style: bold;
     font-display: swap;
@@ -216,12 +218,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Glegoo Bold';
     color: transparent;
+    font-family: 'Glegoo Bold';
     font-size: 4.6rem; /*Tamaño de fuente: 46px */
     font-weight: 400;
     line-height: var(--lineheight-normal);
-    margin: 3.2rem  0;
+    margin: 3.2rem 0;
 }
 
 h3 {
@@ -248,16 +250,13 @@ a:hover{
     color: var(--terciary-color);
 } 
 
-
 a:active {
     color: var(--secondary-color);
-  }
+}
 
-  p + p {
+p + p {
     margin: 1.5rem 0 0;
-  }
-
-
+}
 
 p {
     color: var(--primary-color);
@@ -269,18 +268,9 @@ p {
     z-index: 100;
 }
 
-.p__projects {
-    color: var(--primary-color);
-    font-size: 1.7rem; /*Tamaño de fuente: 20px */
-    font-weight: 400;
-    line-height: 1.7;
-    position: relative;
-    z-index: 100;
-}
-
 /*------------------UTILITES------------------*/
 
-/* utilizo el wrapper para aplicar la misma clase a distintas cosas */
+/* Utilizo el wrapper para aplicar la misma clase a distintas cosas */
 
 .arrow__top {
     display: none;
@@ -290,32 +280,45 @@ p {
     display: none;
 }
 
-.column {
-    margin: 4rem 4rem 0 4.4rem;
-}
-
-.column__projects {
-    padding: 4rem 2.8rem 0 2.8rem;
-}
-
 .coins {
     display: flex;
     justify-content: center;
+}
+
+.column {
+    margin: 4rem 4rem 0 4.4rem;
 }
 
 .hidden {
     display: none;
 }
 
+.stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 2rem;
+}
+
+/*------------------NAVIGATION------------------*/
+
 .menu {
+    opacity: 0;
     pointer-events: none;
     position: fixed;
     right: 2.5rem;
     text-align: end;
     top: 12rem;
     transition: opacity 0.5 ease-in-out;
-    opacity: 0;
     z-index: 9;
+}
+
+.menu-is-active {
+    text-decoration: line-through;
 }
 
 .menu-is-open .menu {
@@ -348,29 +351,6 @@ p {
     width: 5rem;
 }
 
-.stroke {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
-}
-
-.wrapper {
-    margin: 0 auto;
-    max-width: 128rem;
-    padding: 0 2rem;
-}
-
-
-/*------------------HEADER------------------*/
-
-.header {
-    display: inline-block;
-    float: right;
-    margin: 2rem 0 2rem 0;
-}
-
-/*------------------NAVIGATION------------------*/
-
-
 .nav-item-projects, .nav-item-about, .nav-item-contact {
     padding: .5rem 0;
 }
@@ -380,8 +360,12 @@ p {
     text-transform: uppercase;
 }
 
-.menu-is-active {
-    text-decoration: line-through;
+/*------------------HEADER------------------*/
+
+.header {
+    display: inline-block;
+    float: right;
+    margin: 2rem 0 2rem 0;
 }
 
 /*------------------BILLBOARD------------------*/
@@ -442,13 +426,6 @@ p {
     z-index: 50;
 }
 
-.end__projects {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 10rem 0 0 0;
-}
-
 /*------------------IMAGES------------------*/
 
 .caption {
@@ -469,19 +446,6 @@ p {
 
 }
 
-.img__cover {
-    height: auto;
-    max-width: 80%;
-    position: relative;
-}
-
-.img__cover__container {
-    display: flex;
-    height: auto;
-    justify-content: center;
-    max-width: 100%;
-}
-
 .img__mario { 
     height: auto;
     max-width: 90%;
@@ -494,11 +458,6 @@ p {
     filter: grayscale(90%);
     -webkit-box-shadow: 2px 2px 13px 4px #eae6ca; 
     box-shadow: 2px 2px 13px 4px #eae6ca;
-}
-
-.img__slider__projects {
-    height: auto;
-    max-width: 20rem;
 }
 
 /*------------------PROJECTS------------------*/ 
@@ -532,7 +491,7 @@ p {
     color: white;
     font-size: 2.5rem;
     height: 100%;
-    padding: 6rem;
+    padding: 3rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -553,9 +512,9 @@ p {
 }
 
 .description::before {
-    content: '';
     background: url(../imgs/corazon.svg) repeat-x;
     background-size: contain;
+    content: '';
     height: 50px;
     left: -1rem;
     opacity: 0.5;
@@ -602,8 +561,8 @@ p {
 }
 
 .p__mail {
-    font-family: 'Noto Sans Bold';
     display: inline-block;
+    font-family: 'Noto Sans Bold';
     font-size: 2.4rem;
     font-weight: 800;
     line-height: var(--lineheight-normal);
@@ -619,23 +578,16 @@ footer {
     font-family: 'Noto Sans';
     font-size: 1.4rem; /*Tamaño de fuente: 15px */
     font-weight: 800;
-    margin-top: 10rem;
-    padding: 2em 0;
+    margin-top: 5rem;
+    padding: 3rem 0;
     text-align: center;
 }
 
-.footer__projects {
-    background: #F7F2E8 !important;
-    color: var(--primary-color) !important;
-    font-family: 'Noto Sans';
-    font-size: 1.4rem; /*Tamaño de fuente: 15px */
-    font-weight: 800;
-    margin-top: 10rem;
-    padding: 2em 0;
-    text-align: center;
-}
+/*------------------START CONTENT IN PROJECTS PAGES-------------------*/
 
-/*------------------OTHER PROJECTS-------------------*/
+.column__projects {
+    padding: 4rem 2.8rem 0 2.8rem;
+}
 
 .data, .row__projects {
     padding-bottom: 4rem;
@@ -650,6 +602,13 @@ footer {
     width: 100%;
 }
 
+.end__projects {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0 0 0;
+}
+
 .firstrow::before  {
     background: #303030;
     content:'';
@@ -659,6 +618,23 @@ footer {
     width: 100%;
 }
 
+.img__cover {
+    height: auto;
+    max-width: 80%;
+    position: relative;
+}
+
+.img__cover__container {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.img__slider__projects {
+    height: auto;
+    max-width: 20rem;
+}
 
 .overview::before  {
     background: #303030;
@@ -667,6 +643,15 @@ footer {
     height: 1px;
     position: relative;
     width: 100%;
+}
+
+.p__projects {
+    color: var(--primary-color);
+    font-size: 1.7rem; /*Tamaño de fuente: 20px */
+    font-weight: 400;
+    line-height: 1.7;
+    position: relative;
+    z-index: 10;
 }
 
 .overview__gif {
@@ -729,6 +714,9 @@ footer {
     text-align: center;
 }
 
+/*------------------END CONTENT IN PROJECTS PAGES-------------------*/
+
+
 
 /*-------------------------------------------RESPONSIVE 960px-------------------------------------------*/
 @media (min-width: 60em) {
@@ -744,7 +732,7 @@ footer {
         font-size: 6.5rem; 
     }
 
-    .about {
+        .about {
         margin-top: 40rem;
     }
 
@@ -770,18 +758,6 @@ footer {
 
 /*------------------UTILITES------------------*/
 
-    .arrow__top {
-        display: inline;
-    }
-
-    .arrow__top svg {
-        bottom: 3rem;
-        height: auto;
-        left: 3rem;
-        position: absolute;
-        max-width: 8%;
-    }    
-
     .arrow__bottom {
         display: inline;
     }
@@ -794,14 +770,37 @@ footer {
         max-width: 8%;
     }
 
+    .arrow__top {
+        display: inline;
+    }
+
+    .arrow__top svg {
+        bottom: 3rem;
+        height: auto;
+        left: 3rem;
+        position: absolute;
+        max-width: 8%;
+    }    
+
     .column {
         width: 33%;
     }
 
-
     .hidden {
         display: inline;
     }
+
+    .hidden__desktop {
+        display: none;
+    }
+
+    .row {
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+    }
+
+/*------------------NAVIGATION------------------*/   
 
     .menu {
         display: flex;
@@ -813,14 +812,6 @@ footer {
         opacity: 1;
         z-index: 20;
     }
-
-    .row {
-        align-items: flex-start;
-        display: flex;
-        width: 100%;
-    }
-
-
 
 /*------------------HEADER------------------*/  
 
@@ -836,6 +827,10 @@ footer {
 
     .splide {
         margin-top: 8rem;
+    }
+
+    .text {
+        padding: 6rem;
     }
 
 /*------------------BILLBOARD------------------*/   
@@ -855,7 +850,7 @@ footer {
     .billboard_title_invert {
         bottom: 4rem;
         color: var(--secondary-color);
-        font-size: 16rem; /*Tamaño de fuente: 120px */
+        font-size: 16rem; /*Tamaño de fuente: 160px */
         font-weight: 100;
         line-height: var(--lineheight-normal);
         position: absolute;
@@ -865,7 +860,7 @@ footer {
     }
 
     .subtitle_location_text {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /*Tamaño de fuente: 25px */
         line-height: var(--lineheight-normal);
         position: absolute;
         right: 4rem;
@@ -873,7 +868,7 @@ footer {
     }
 
     .subtitle_location_text_projects {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /*Tamaño de fuente: 25px */
         font-weight: 400;
         line-height: 1.4;
         position: fixed;
@@ -883,18 +878,13 @@ footer {
         z-index: 50;
     }
 
-    
 
 /*------------------IMAGES------------------*/ 
 
     .caption {
-        font-size: 2rem;
+        font-size: 2rem; /*Tamaño de fuente: 20px */
         padding: 1rem;
         text-align: center;
-    }
-
-    .hidden__desktop {
-        display: none;
     }
 
     .img__coin {
@@ -912,7 +902,6 @@ footer {
         position: relative;
     }
 
-
     .img__mario {
         height: auto;
         margin: 13rem;
@@ -926,33 +915,16 @@ footer {
         filter: grayscale(90%);
     }
 
-    .img__slider__projects {
-        height: auto;
-        max-width: 60rem;
-    }
-
-    .img__slider__projects {
-        height: auto;
-        max-width: 100rem;
-    }
-
-    .sameline {
-        display: flex;
-    }
 /*------------------ABOUT------------------*/
 
     .column {
             width: 33%;
     }
 
-    .column__projects {
-        width: 50%;
-    }
+/*------------------CONTACT------------------*/
 
-/*------------------CONTACT------------------*/ 
     .contact__text {
         margin: 10rem 5.4rem 4rem 0rem;
-
     }
 
     .p__contact {
@@ -972,7 +944,7 @@ footer {
         margin-top: 30rem;
     }
 
-/*------------------OTHER PROJECTS------------------*/
+/*------------------START CONTENT IN PROJECTS PAGES------------------*/
 
     .arrow__bottom__projects svg {
         bottom: 0rem;
@@ -986,10 +958,24 @@ footer {
         border-right: solid thin #303030;
     }
 
+    .column__projects {
+        width: 50%;
+    }
+
     .double {
         margin-top: 17rem;
     }
 
+    .footer__projects{
+        margin-top: 5rem;
+    }
+
+    .img__slider__projects {
+        height: auto;
+        max-width: 100rem;
+    }
+
+/*------------------END CONTENT IN PROJECTS PAGES------------------*/
 
 }
 
