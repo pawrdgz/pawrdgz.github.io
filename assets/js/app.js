@@ -9,27 +9,22 @@ $(document).ready(function () {
        $('html').toggleClass('menu-is-open');
     })
 
-// Flecha que dirige hacia top     
-
-    $("#arrowbottom a");
-        $("#arrowbottom").on("click", function() {
-        $("body,html").animate({
-            scrollTop: 0
-        }, 1250)
-    })
 
 // Flecha que dirige hacia abajo 
 
-    $("#arrowtop a");
-        $("#arrowtop").on("click", function() {
-        $("body,html").animate({
-            scrollTop: 1400
-        }, 1300)
-    })
+$("#arrowtop").on("click", function() {
+    $("body,html").animate({
+        scrollTop: $("#projects").position().top
+    }, 1300)
+})
 
-    
+// Flecha que dirige hacia top     
 
-    });
+$("#arrowbottom").on("click", function() {
+    $("body,html").animate({
+        scrollTop: 0
+    }, 1250)
+})
 
 // Inicializar el fade-in 
 
@@ -44,6 +39,16 @@ new Splide('.splide', {
     gap: '8.4rem',
     focus: 'center'
 }).mount();
+
+
+
+
+    });
+
+
+
+
+
 
 // Intento de menú sticky
 
