@@ -2,27 +2,213 @@
 <html lang="en">
 
     <head>
-        
+
         <meta charset="utf-8">
         <meta name="author" content="Paula Rodriguez Ocaña">
-        <meta name="description" content="Paula Rodriguez Portfolio">
+        <meta name="description" content="UX Designer with a background in Literature, Web Content Management and e-learning. Curious, creative and analytical.">
         <meta name="keywords" content="portfolio, projects, design">
-        <meta name="robots" content="index"/>
+        <meta name="robots" content="index" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Paula Rodríguez Portfolio</title>
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link href="assets/css/styles.css" rel="stylesheet" />
+        <title>Paula Rodríguez - The Witness, UX Case Study</title>
+
+<!-- CSS propio-->
+        <link href="../assets/css/styles.css" rel="stylesheet"/>
+
+        <link rel="icon" href="../assets/imgs/favicon_lion.ico"/>
+
     </head>
 
-<body>
-	
-</body>
+    <body>
+
+
+        <header id="header" class="header_projects">
+            <div class="wrapper">
+                <div class="subtitle__location_projects">
+                    <a href="../index.html" class="subtitle_location_text_projects">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+<!--Title-->
+
+    <div class="wrapper">
+        <h2 class="stroke">
+            The Witness <br/>UX Case Study
+        </h2>
+    </div>
+
+<!--Slider!-->
+            <section class="billboard__projects">
+                <figure class="img__cover__container">
+                    <img src="../assets/imgs/iffound/iffound_cover.webp" alt="" class="img__cover">
+                </figure>
+            </section>
+
+<!--Datos-->
+            <section class="data" data-aos="fade-up" data-aos-duration="1500">
+                <div class="wrapper">
+                    <div class="row"> 
+                        <div class="column__projects">
+                            <ul>                        
+                            <li class="projects__year">
+                                    <h4>year</h4>
+                                    <h4>2020</h4>
+                            </li>
+                            <li class="projects__motive">
+                                    <h4>motive</h4>
+                                    <h4>Self study</h4>
+                            </li>
+                            <li class="projects__tags">
+                                    <h4>tags</h4>
+                                    <h4>UI/UX Design,   Onboarding,   Videogames</h4>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="column__projects">
+                            <p class="p__projects">
+                                </p>                                                 
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+<!--Row 1-->
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h3>Overview</h3>                          
+                <p class="p__projects">
+                    <strong>The Witness</strong> (2016), developed by Thekla Inc. is a puzzle solving single player video game. 
+                    In an isolated island and with no dialogue, the player will face different puzzles 
+                    that are spread all over the island.</p>
+
+                <p class="p__projects spaceinbetween">
+                    The puzzles in the Witness are composed by: a panel, a grid and a start and finish point. 
+                    They may also include geometrical objects that add complexity to the puzzles.
+                    The Onboarding for the game is plain but effective, 
+                    as it only presents us with a simple screen at the beginning that tells us the game controls. 
+                    This is <strong>the only UI element</strong> that we will find ingame.</p>
+            </div>
+            <div class="column__projects">
+                <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_intro.gif"/> 
+                <br/>
+                <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_navigation.gif"/>                                                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Row 2--> 
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h3>Problem</h3>                          
+                <p class="p__projects">
+                    Firstly, the UI is almost non existent, as the only menu that we encounter 
+                    is the Chapters and Settings. Nonetheless, the player must not do any other action than erasing the screen.</p>
+
+                <p class="p__projects">
+                    And here we mention the first problem: the mechanic of erasing the screen. 
+                    It is vaguely shown at the beginning and although it is easily understood on mobile due to the nature of the device, 
+                    it might be hard to comprehend on PC.</p> 
+<br/>
+                <h3 class="spaceinbetween">Solution</h3>                          
+                <p class="p__projects">
+                    Since there is no proper call to action -in the PC version- that might tell the user to drag instead of 
+                    just clicking the screen, I would add an indicator of what the user should do. This is done by simply
+                    adding a visual cue in the PC version.</p>
+    
+            </div>
+            <div class="column__projects">
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_ui_pc.webp"/>
+                    <figcaption class="caption">PC screenshot</figcaption>
+                </figure>    
+
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_ui_pcupgrade.webp"/>
+                    <figcaption class="caption">Solution</figcaption>
+                </figure>  
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!--Row 3-->
+<section class="row__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <div class="row"> 
+            <div class="column__projects">
+                <h3>Problem</h3>                          
+                <p class="p__projects">
+                    Throughout the experience, we find some Irish words that are accompanied with a cross (which are actually Irish Celtic Crosses). 
+                    This indicates that an explanation for the word can be found, although it is rather difficult to understand that it’s a clickable 
+                    item or that it works as a Glossary.</p>
+
+<br/>
+                <h3 class="spaceinbetween double">Solution</h3>                          
+                <p class="p__projects">
+                    To solve the problematic of the player not knowing that it is a clickable item, for the first time that a cross appears, 
+                    I would add a visual cue. This would lead the user into clicking on the cross at the bottom left 
+                    of the screen and thus showing how it works.</p>
+    
+            </div>
+            <div class="column__projects">
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_cross.webp"/>
+                    <figcaption class="caption">Example of the cross item</figcaption>
+                </figure>    
+
+                <figure>
+                    <img class="img__projects" src="../assets/imgs/iffound/iffound_pc_crossupgrade.webp"/>
+                    <figcaption class="caption">Solution</figcaption>
+                </figure>  
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--Thank you-->
+<section class="end__projects" data-aos="fade-up" data-aos-duration="1500">
+    <div class="wrapper">
+        <img class="overview__img" src="../assets/imgs/iffound/if_found.jpg" alt="">
+        <p class="thankyou">Thank you!</p>
+    </div>
+
+    <div id="arrowbottom" class="arrow__bottom__projects">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M248.5 3.1l-160 160c-4.2 4.2-4.2 10.9 0 15.1s10.9 
+            4.2 15.1 0L245.4 36.4v464.9c-.1 5.9 4.7 10.7 10.6 10.7s10.7-4.8 
+            10.7-10.7V36.4l141.8 141.8c4.2 4.2 10.9 4.2 15.1 0 2.1-2.1 3.1-4.8 
+            3.1-7.5s-1-5.5-3.1-7.5l-160-160c-4.2-4.2-11-4.2-15.1-.1z" fill="#303030"/></svg>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer__projects">
+            Paula Rodríguez, All rights reserved ©2021
+        </footer>
+
+        <!-- Javascript-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="../assets/js/app.js"></script>
+
+    </body>
+
+    <!-- CSS aos library-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </html>
