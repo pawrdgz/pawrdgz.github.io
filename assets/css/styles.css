@@ -268,6 +268,13 @@ p {
     z-index: 100;
 }
 
+/*------------------ANIMATION------------------*/
+
+@keyframes selected {
+    from {width: 0px;}
+    to {width:100%}
+}
+
 /*------------------UTILITES------------------*/
 
 /* Utilizo el wrapper para aplicar la misma clase a distintas cosas */
@@ -318,7 +325,22 @@ p {
 }
 
 .menu-is-active {
-    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.menu-is-active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: var(--primary-color);  
+    -webkit-animation-name: border; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: selected;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .menu-is-open .menu {
@@ -757,6 +779,10 @@ footer {
     }
 
 /*------------------UTILITES------------------*/
+
+    .arrow__bottom, .arrow__top {
+        cursor: pointer;
+    }
 
     .arrow__bottom {
         display: inline;
