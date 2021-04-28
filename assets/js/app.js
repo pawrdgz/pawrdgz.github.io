@@ -64,9 +64,25 @@ new Typed('.billboard_title_invert', {
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
+    var windowHeight = $(window).innerHeight();
     var projectsTop = $("#projects").position().top;
     var aboutTop = $("#about").position().top;
     var contactTop = $("#contact").position().top;
+    var menuTop = $(".menu").position().top;
+    var menuHeight = $(".menu").height();
+    var menuRealHeight = $(".menu").outerHeight(true);
+    var menuFixed = scroll + windowHeight - menuRealHeight;
+
+    if (menuFixed >= menuTop) {
+        $(".menu").addClass("is-fixed");
+        $(".menu").css({height: menuHeight});
+    } else {
+        $(".menu").removeClass("is-fixed");
+        $(".menu").css({height: ""});
+    }
+
+
+
 
     if (scroll >= projectsTop && scroll < aboutTop) {
         $(".nav-item").removeClass("menu-is-active");

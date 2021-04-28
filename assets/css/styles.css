@@ -275,6 +275,7 @@ p {
     to {width:100%}
 }
 
+
 /*------------------UTILITES------------------*/
 
 /* Utilizo el wrapper para aplicar la misma clase a distintas cosas */
@@ -342,6 +343,7 @@ p {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
+
 
 .menu-is-open .menu {
     opacity: 1;
@@ -782,9 +784,6 @@ footer {
 
     .arrow__bottom, .arrow__top {
         cursor: pointer;
-    }
-
-    .arrow__bottom {
         display: inline;
     }
 
@@ -796,12 +795,8 @@ footer {
         max-width: 8%;
     }
 
-    .arrow__top {
-        display: inline;
-    }
-
     .arrow__top svg {
-        bottom: 3rem;
+        bottom: 6rem;
         height: auto;
         left: 3rem;
         position: absolute;
@@ -838,6 +833,15 @@ footer {
         opacity: 1;
         z-index: 20;
     }
+
+    .menu .is-fixed .nav-main {
+        bottom: 10rem;
+        opacity: 1;
+        position: fixed;
+        right: 10rem;
+        z-index: 9;
+    }
+    
 
 /*------------------HEADER------------------*/  
 
