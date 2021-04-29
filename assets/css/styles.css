@@ -337,10 +337,10 @@ p {
     width: 0px;
     background: var(--primary-color);  
     -webkit-animation-name: border; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 0.6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.7s; /* Safari 4.0 - 8.0 */
     -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
     animation-name: selected;
-    animation-duration: 0.6s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -782,7 +782,7 @@ footer {
 
 /*------------------UTILITES------------------*/
 
-    .arrow__bottom, .arrow__top {
+    .arrow__bottom, .arrow__top, .arrow__bottom__projects {
         cursor: pointer;
         display: inline;
     }

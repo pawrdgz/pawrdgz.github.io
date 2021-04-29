@@ -1,3 +1,19 @@
+// Flecha que dirige hacia abajo 
+
+$("#arrowtop").on("click", function() {
+    $("body,html").animate({
+        scrollTop: $("#projects").position().top
+    }, 1300)
+    })
+
+// Flecha que dirige hacia top     
+
+$("#arrowbottom").on("click", function() {
+    $("body,html").animate({
+        scrollTop: 0
+    }, 1250)
+    })
+
 // Inicializar el fade-in 
 
 AOS.init();
@@ -23,21 +39,7 @@ $(document).ready(function () {
     })
 
 
-// Flecha que dirige hacia abajo 
 
-$("#arrowtop").on("click", function() {
-    $("body,html").animate({
-        scrollTop: $("#projects").position().top
-    }, 1300)
-    })
-
-// Flecha que dirige hacia top     
-
-$("#arrowbottom").on("click", function() {
-    $("body,html").animate({
-        scrollTop: 0
-    }, 1250)
-    })
 
 // typed
 
