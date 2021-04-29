@@ -803,6 +803,11 @@ footer {
         max-width: 8%;
     }    
 
+    .center {
+        display: block; 
+        margin: auto;
+    }
+
     .column {
         width: 33%;
     }
