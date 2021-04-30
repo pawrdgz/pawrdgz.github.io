@@ -480,8 +480,6 @@ p {
     max-width: 20rem;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(90%);
-    -webkit-box-shadow: 2px 2px 13px 4px #eae6ca; 
-    box-shadow: 2px 2px 13px 4px #eae6ca;
 }
 
 /*------------------PROJECTS------------------*/ 
