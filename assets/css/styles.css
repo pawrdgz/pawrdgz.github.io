@@ -588,7 +588,10 @@ p {
     font-size: 2.4rem;
     font-weight: 800;
     line-height: var(--lineheight-normal);
-    word-wrap: normal;
+}
+
+.label {
+    float: left;
 }
 
 /*------------------FOOTER-------------------*/
