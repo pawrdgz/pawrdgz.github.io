@@ -44,7 +44,7 @@ $(document).ready(function () {
 // typed
 
 new Typed('.billboard_title_invert', {
-    strings: ['Tiramisu enjoyer','The Batman', 'UX Designer'],
+    strings: ['Tiramisu eater','The Batman', 'UX Designer'],
     typeSpeed: 50,
     backSpeed: 40,
     smartBackspace: true,
