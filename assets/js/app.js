@@ -40,7 +40,6 @@ $(document).ready(function () {
 
 
 
-
 // typed
 
 new Typed('.billboard_title_invert', {
