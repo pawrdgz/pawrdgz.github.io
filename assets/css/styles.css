@@ -549,6 +549,11 @@ p {
     z-index: 1;
 }
 
+.video {
+    width: 300px; 
+    height: auto;
+}
+
 /*------------------ABOUT------------------*/
 
 .description {
@@ -1024,6 +1029,10 @@ footer {
         width: 50%;
     }
 
+    .column__projects__conclusion {
+        width: 33%;
+    }
+
     .double {
         margin-top: 17rem;
     }
@@ -1035,6 +1044,11 @@ footer {
     .img__slider__projects {
         height: auto;
         max-width: 100rem;
+    }
+
+    .video {
+        width: 635px; 
+        height: auto;
     }
 
 /*------------------END CONTENT IN PROJECTS PAGES------------------*/
