@@ -330,6 +330,17 @@ p {
     display: none;
 }
 
+.progreso {
+    background-color: var(--secondary-color);
+    height: 0.8rem;
+    left: 0;
+    min-width: 0%;
+    position: fixed;
+    top: 0;
+    transition: all linear 0.1s;
+    z-index: 10;
+}
+
 .stroke {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--primary-color);
@@ -559,6 +570,14 @@ p {
 .video {
     width: 300px; 
     height: auto;
+}
+
+.video__mypersona {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 300px; 
 }
 
 /*------------------ABOUT------------------*/
@@ -1073,8 +1092,16 @@ footer {
     }
 
     .video {
-        width: 635px; 
         height: auto;
+        width: 635px; 
+    }
+
+    .video__mypersona {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 900px; 
     }
 
 /*------------------END CONTENT IN PROJECTS PAGES------------------*/
