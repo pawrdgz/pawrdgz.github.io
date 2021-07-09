@@ -14,6 +14,16 @@ $("#arrowbottom").on("click", function() {
     }, 1250)
     })
 
+// Progreso  
+$(document).on("scroll", function(){
+    var pixels = $(document).scrollTop();
+    var pageHeight = $(document).height() - $(window).height();
+    var progress = 100 * pixels / pageHeight;
+        
+    $("div.progreso").css("width", progress + "%");
+    })
+      
+      
 // Inicializar el fade-in 
 
 AOS.init();
