@@ -1086,6 +1086,13 @@ footer {
         max-width: 80%;      
     }
 
+    .img__projects__xb {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;      
+    }
+
     .img__slider__projects {
         height: auto;
         max-width: 100rem;
