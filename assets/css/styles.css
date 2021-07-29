@@ -749,7 +749,7 @@ footer {
 }
 
 .projects__year, .projects__motive, .projects__tags {
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 4rem 0rem;
 }
 
 .projects__year::after {
