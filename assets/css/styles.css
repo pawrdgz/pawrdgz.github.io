@@ -210,12 +210,14 @@
  
  h3 {
      color: var(--primary-color);
+     font-family: 'Hanson Bold';
      font-size: 3rem; /*Tamaño de fuente: 13px */
      font-weight: 700;
      line-height: 1.7;
  }
  
  h4 {
+     font-family: 'Hanson Bold';
      font-size: 3rem; /*Tamaño de fuente: 13px */
      font-weight: 700;
      line-height: 1.7;
