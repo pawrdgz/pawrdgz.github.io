@@ -146,7 +146,7 @@
  
  @font-face {
      font-family: 'Hanson Bold';
-     src: local(Hanson Bold), local(Hanson-Bold),
+     src: local(Hanson Bold), local(Hanson-Bold), local(Hanson),
      url('../fonts/hanson/hanson-bold-webfont.woff2') format('woff2'),
      url('../fonts/hanson/hanson-bold-webfont.woff') format('woff');
  
@@ -188,7 +188,7 @@
  h3,
  h4,
  .secondary-font {
-     font-family: "Hanson Bold", "Palatino Lynotipe", "Book Antiqua", "Palatino", serif;
+     font-family: "Hanson Bold", "Hanson" "Palatino Lynotipe", "Book Antiqua", "Palatino", serif;
  }
  
  h1 {
