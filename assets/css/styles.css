@@ -426,6 +426,7 @@
  
  .billboard_title {
      display: flex;
+     font-family: "Hanson Bold";
      justify-content: flex-start;
      margin-top: 10rem;
      -webkit-text-stroke-width: 1px;
