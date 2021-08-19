@@ -314,6 +314,10 @@
      display: none;
  }
  
+ .checked {
+     list-style-type: square;
+ }
+
  .progreso {
      background-color: var(--secondary-color);
      height: 0.8rem;
